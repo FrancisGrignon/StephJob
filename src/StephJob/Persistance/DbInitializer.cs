@@ -21,7 +21,7 @@
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
                 Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
-                using (var textReader = File.OpenText(@"datasets\sdgs372.csv"))
+                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs372.csv"))
                 {
                     using (var csv = new CsvReader(textReader))
                     {
@@ -33,7 +33,7 @@
                     }
                 }
 
-                using (var textReader = File.OpenText(@"datasets\sdgs411.csv"))
+                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs411.csv"))
                 {
                     using (var csv = new CsvReader(textReader))
                     {
@@ -45,7 +45,7 @@
                     }
                 }
 
-                using (var textReader = File.OpenText(@"datasets\sdgs431.csv"))
+                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs431.csv"))
                 {
                     using (var csv = new CsvReader(textReader))
                     {
@@ -57,7 +57,7 @@
                     }
                 }
 
-                using (var textReader = File.OpenText(@"datasets\sdgs441.csv"))
+                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs441.csv"))
                 {
                     using (var csv = new CsvReader(textReader))
                     {
@@ -69,7 +69,7 @@
                     }
                 }
 
-                using (var textReader = File.OpenText(@"datasets\sdgs531.csv"))
+                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs531.csv"))
                 {
                     using (var csv = new CsvReader(textReader))
                     {
@@ -81,7 +81,7 @@
                     }
                 }
 
-                using (var textReader = File.OpenText(@"datasets\sdgs861.csv"))
+                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs861.csv"))
                 {
                     using (var csv = new CsvReader(textReader))
                     {
