@@ -1,7 +1,10 @@
 ﻿namespace StephJob.Persistance
 {
     using CsvHelper;
+    using Microsoft.EntityFrameworkCore;
     using StephJob.Core.Domain;
+    using System;
+    using System.Diagnostics;
     using System.Globalization;
     using System.IO;
     using System.Linq;
@@ -11,90 +14,52 @@
     {
         public static void Initialize(StephContext context)
         {
-            context.Database.EnsureCreated();
-            
-            if (false == context.Sdgs372s.Any())
+            context.Database.Migrate();
+
+            SeedFromCsv<Sdgs372>(context, @"wwwroot\datasets\Sdgs372.csv");
+            SeedFromCsv<Sdgs411>(context, @"wwwroot\datasets\Sdgs411.csv");
+            SeedFromCsv<Sdgs431>(context, @"wwwroot\datasets\Sdgs431.csv");
+            SeedFromCsv<Sdgs441>(context, @"wwwroot\datasets\Sdgs441.csv");
+            SeedFromCsv<Sdgs531>(context, @"wwwroot\datasets\Sdgs531.csv");
+            SeedFromCsv<Sdgs861>(context, @"wwwroot\datasets\Sdgs861.csv");
+            SeedFromCsv<Sdgs372>(context, @"wwwroot\datasets\sdgs372.csv");
+
+            context.SaveChanges();      
+        }
+
+        private static void SeedFromCsv<TEntity>(StephContext context, string path) where TEntity : class
+        {
+            var currentUICulture = Thread.CurrentThread.CurrentUICulture;
+            var currentCulture = Thread.CurrentThread.CurrentCulture;
+
+            try
             {
-                var currentUICulture = Thread.CurrentThread.CurrentUICulture;
-                var currentCulture = Thread.CurrentThread.CurrentCulture;
+                var culture = new CultureInfo("en-US");
 
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-                Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+                Thread.CurrentThread.CurrentCulture = culture;
+                Thread.CurrentThread.CurrentUICulture = culture;
 
-                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs372.csv"))
+                if (false == context.Set<TEntity>().Any())
                 {
-                    using (var csv = new CsvReader(textReader))
+                    using (var textReader = File.OpenText(path))
                     {
-                        csv.Configuration.WillThrowOnMissingField = false;
+                        using (var csv = new CsvReader(textReader))
+                        {
+                            csv.Configuration.WillThrowOnMissingField = false;
 
-                        var records = csv.GetRecords<Sdgs372>();
+                            var records = csv.GetRecords<TEntity>();
 
-                        context.Sdgs372s.AddRange(records);
+                            context.Set<TEntity>().AddRange(records);
+                        }
                     }
                 }
-
-                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs411.csv"))
-                {
-                    using (var csv = new CsvReader(textReader))
-                    {
-                        csv.Configuration.WillThrowOnMissingField = false;
-
-                        var records = csv.GetRecords<Sdgs411>();
-
-                        context.Sdgs411s.AddRange(records);
-                    }
-                }
-
-                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs431.csv"))
-                {
-                    using (var csv = new CsvReader(textReader))
-                    {
-                        csv.Configuration.WillThrowOnMissingField = false;
-
-                        var records = csv.GetRecords<Sdgs431>();
-
-                        context.Sdgs431s.AddRange(records);
-                    }
-                }
-
-                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs441.csv"))
-                {
-                    using (var csv = new CsvReader(textReader))
-                    {
-                        csv.Configuration.WillThrowOnMissingField = false;
-
-                        var records = csv.GetRecords<Sdgs441>();
-
-                        context.Sdgs441s.AddRange(records);
-                    }
-                }
-
-                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs531.csv"))
-                {
-                    using (var csv = new CsvReader(textReader))
-                    {
-                        csv.Configuration.WillThrowOnMissingField = false;
-
-                        var records = csv.GetRecords<Sdgs531>();
-
-                        context.Sdgs531s.AddRange(records);
-                    }
-                }
-
-                using (var textReader = File.OpenText(@"wwwroot\datasets\sdgs861.csv"))
-                {
-                    using (var csv = new CsvReader(textReader))
-                    {
-                        csv.Configuration.WillThrowOnMissingField = false;
-
-                        var records = csv.GetRecords<Sdgs861>();
-
-                        context.Sdgs861s.AddRange(records);
-                    }
-                }
-
-                context.SaveChanges();
-
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
                 Thread.CurrentThread.CurrentUICulture = currentUICulture;
                 Thread.CurrentThread.CurrentCulture = currentCulture;
             }
