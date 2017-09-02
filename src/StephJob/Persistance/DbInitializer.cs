@@ -23,6 +23,7 @@
             SeedFromCsv<Sdgs531>(context, @"wwwroot\datasets\Sdgs531.csv");
             SeedFromCsv<Sdgs861>(context, @"wwwroot\datasets\Sdgs861.csv");
             SeedFromCsv<Sdgs372>(context, @"wwwroot\datasets\sdgs372.csv");
+            SeedFromCsv<WorldBankGdp>(context, @"wwwroot\datasets\worldbank.NY.GDP.MKTP.CD.csv");
 
             context.SaveChanges();      
         }

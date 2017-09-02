@@ -16,6 +16,8 @@ namespace StephJob.Core.Repositories
 
         ISdgs861Repository Sdgs861s { get; }
 
+        IWorldBankGdpRepository WorldBankGdps { get; }
+
         int Complete();
     }
 }

@@ -21,7 +21,8 @@
 
         private readonly Lazy<ISdgs861Repository> sdgs861s;
 
-
+        private readonly Lazy<IWorldBankGdpRepository> worldBankGdps;
+        
         public UnitOfWork(StephContext context)
         {
             this.context = context;
@@ -32,6 +33,7 @@
             this.sdgs441s = new Lazy<ISdgs441Repository>(() => new Sdgs441Repository(context));
             this.sdgs531s = new Lazy<ISdgs531Repository>(() => new Sdgs531Repository(context));
             this.sdgs861s = new Lazy<ISdgs861Repository>(() => new Sdgs861Repository(context));
+            this.worldBankGdps = new Lazy<IWorldBankGdpRepository>(() => new WorldBankGdpRepository(context));
         }
 
         public ISdgs372Repository Sdgs372s => sdgs372s.Value;
@@ -45,7 +47,9 @@
         public ISdgs531Repository Sdgs531s => sdgs531s.Value;
 
         public ISdgs861Repository Sdgs861s => sdgs861s.Value;
-        
+
+        public IWorldBankGdpRepository WorldBankGdps => worldBankGdps.Value;
+
         public int Complete()
         {
             return context.SaveChanges();
