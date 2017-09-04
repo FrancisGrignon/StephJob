@@ -11,9 +11,10 @@ using System;
 namespace StephJob.Migrations
 {
     [DbContext(typeof(StephContext))]
-    partial class StephContextModelSnapshot : ModelSnapshot
+    [Migration("20170904053226_AddTableNaics")]
+    partial class AddTableNaics
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,24 +41,6 @@ namespace StephJob.Migrations
                     b.HasKey("NaicsId");
 
                     b.ToTable("Naics");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.Noc2011", b =>
-                {
-                    b.Property<int>("Noc2011Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("Code");
-
-                    b.Property<string>("Description");
-
-                    b.Property<int>("Type");
-
-                    b.Property<string>("TypeLabel");
-
-                    b.HasKey("Noc2011Id");
-
-                    b.ToTable("Noc2011s");
                 });
 
             modelBuilder.Entity("StephJob.Core.Domain.Sdgs372", b =>
@@ -790,20 +773,6 @@ namespace StephJob.Migrations
                     b.HasKey("Sdgs861Id");
 
                     b.ToTable("Sdgs861s");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.Soc2010", b =>
-                {
-                    b.Property<int>("Soc2010Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Code");
-
-                    b.Property<string>("Title");
-
-                    b.HasKey("Soc2010Id");
-
-                    b.ToTable("Soc2010s");
                 });
 
             modelBuilder.Entity("StephJob.Core.Domain.WorldBankGdp", b =>

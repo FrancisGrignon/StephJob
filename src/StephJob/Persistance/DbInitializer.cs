@@ -24,8 +24,11 @@
             SeedFromCsv<Sdgs861>(context, @"wwwroot\datasets\Sdgs861.csv");
             SeedFromCsv<Sdgs372>(context, @"wwwroot\datasets\sdgs372.csv");
             SeedFromCsv<WorldBankGdp>(context, @"wwwroot\datasets\worldbank.NY.GDP.MKTP.CD.csv");
+            SeedFromCsv<Naics>(context, @"wwwroot\datasets\NAICS-SCIAN-2012-Structure_B.csv");
+            SeedFromCsv<Soc2010>(context, @"wwwroot\datasets\soc_2010_alphabetical_index.csv");
+            SeedFromCsv<Noc2011>(context, @"wwwroot\datasets\statcan_noc2011_122372_Element.csv");
 
-            context.SaveChanges();      
+            context.SaveChanges();
         }
 
         private static void SeedFromCsv<TEntity>(StephContext context, string path) where TEntity : class

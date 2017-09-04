@@ -15,6 +15,10 @@
         {
         }
 
+        public DbSet<Naics> Naics { get; set; }
+
+        public DbSet<Noc2011> Noc2011s { get; set; }
+
         public DbSet<Sdgs372> Sdgs372s { get; set; }
 
         public DbSet<Sdgs411> Sdgs411s { get; set; }
@@ -26,6 +30,8 @@
         public DbSet<Sdgs531> Sdgs531s { get; set; }
 
         public DbSet<Sdgs861> Sdgs861s { get; set; }
+
+        public DbSet<Soc2010> Soc2010s { get; set; }
 
         public DbSet<WorldBankGdp> WorldBankGdps { get; set; }
     }

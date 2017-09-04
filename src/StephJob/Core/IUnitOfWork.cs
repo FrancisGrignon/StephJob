@@ -4,6 +4,10 @@ namespace StephJob.Core.Repositories
 
     public interface IUnitOfWork : IDisposable
     {
+        INaicsRepository Naics { get; }
+
+        INoc2011Repository Noc2011s { get; }
+
         ISdgs372Repository Sdgs372s { get; }
 
         ISdgs411Repository Sdgs411s { get; }
@@ -15,6 +19,8 @@ namespace StephJob.Core.Repositories
         ISdgs531Repository Sdgs531s { get; }
 
         ISdgs861Repository Sdgs861s { get; }
+
+        ISoc2010Repository Soc2010s { get; }
 
         IWorldBankGdpRepository WorldBankGdps { get; }
 
