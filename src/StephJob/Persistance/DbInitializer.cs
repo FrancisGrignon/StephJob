@@ -26,7 +26,7 @@
             SeedFromCsv<WorldBankGdp>(context, @"wwwroot\datasets\worldbank.NY.GDP.MKTP.CD.csv");
             SeedFromCsv<Naics>(context, @"wwwroot\datasets\NAICS-SCIAN-2012-Structure_B.csv");
             SeedFromCsv<Soc2010>(context, @"wwwroot\datasets\soc_2010_alphabetical_index.csv");
-            SeedFromCsv<Noc2011>(context, @"wwwroot\datasets\statcan_noc2011_122372_Element.csv");
+            SeedFromCsv<Noc2011>(context, @"wwwroot\datasets\esdc.noc2011.csv");
 
             context.SaveChanges();
         }
