@@ -2,4 +2,80 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Hello, world!</h1>
+<div>
+    <div class="container">
+        <h1>Industry and profession selector!</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <h1>Employment Prospects</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <h1>Industry trend graph, compared with GDP</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <h1>Environmental Outlook</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+        <canvas id="bar-chart" width="800" height="450"></canvas>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <h1>Infograph about all the data points</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <h1>Contact / Bio</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <h1>Data sources</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+    </div>
+</div>
+
+@section Scripts 
+{
+<script type="text/javascript">
+    window.onload = function () {
+        new Chart(document.getElementById("bar-chart"), {
+            type: 'bar',
+            data: {
+                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                datasets: [
+                    {
+                        label: "Population (millions)",
+                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                        data: [2478, 5267, 734, 784, 433]
+                    }
+                ]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Predicted world population (millions) in 2050'
+                }
+            }
+        });
+    };
+</script>
+}
