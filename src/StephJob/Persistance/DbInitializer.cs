@@ -24,8 +24,9 @@
             SeedFromCsv<Sdgs861>(context, @"wwwroot\datasets\Sdgs861.csv");
             SeedFromCsv<Sdgs372>(context, @"wwwroot\datasets\sdgs372.csv");
             SeedFromCsv<WorldBankGdp>(context, @"wwwroot\datasets\worldbank.NY.GDP.MKTP.CD.csv");
+            SeedFromCsv<Naics>(context, @"wwwroot\datasets\NAICS-SCIAN-2012-Structure_B.csv");
 
-            context.SaveChanges();      
+            context.SaveChanges();
         }
 
         private static void SeedFromCsv<TEntity>(StephContext context, string path) where TEntity : class

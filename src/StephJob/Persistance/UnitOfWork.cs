@@ -9,6 +9,8 @@
     {
         private readonly StephContext context;
 
+        private readonly Lazy<INaicsRepository> naics;
+
         private readonly Lazy<ISdgs372Repository> sdgs372s;
 
         private readonly Lazy<ISdgs411Repository> sdgs411s;
@@ -35,6 +37,8 @@
             this.sdgs861s = new Lazy<ISdgs861Repository>(() => new Sdgs861Repository(context));
             this.worldBankGdps = new Lazy<IWorldBankGdpRepository>(() => new WorldBankGdpRepository(context));
         }
+
+        public INaicsRepository Naics => naics.Value;
 
         public ISdgs372Repository Sdgs372s => sdgs372s.Value;
 
