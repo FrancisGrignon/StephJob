@@ -17,6 +17,8 @@
 
         public DbSet<Naics> Naics { get; set; }
 
+        public DbSet<Noc2011> Noc2011s { get; set; }
+
         public DbSet<Sdgs372> Sdgs372s { get; set; }
 
         public DbSet<Sdgs411> Sdgs411s { get; set; }

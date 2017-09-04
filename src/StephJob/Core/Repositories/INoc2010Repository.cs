@@ -2,7 +2,7 @@
 {
     using StephJob.Core.Domain;
 
-    public interface INoc2011Repository : IRepository<Noc2011>
+    public interface ISoc2010Repository : IRepository<Soc2010>
     {
     }
 }
