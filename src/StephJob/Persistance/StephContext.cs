@@ -29,6 +29,8 @@
 
         public DbSet<Sdgs861> Sdgs861s { get; set; }
 
+        public DbSet<Soc2010> Soc2010s { get; set; }
+
         public DbSet<WorldBankGdp> WorldBankGdps { get; set; }
     }
 }
