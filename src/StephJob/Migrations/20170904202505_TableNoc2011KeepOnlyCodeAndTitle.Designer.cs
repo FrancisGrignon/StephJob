@@ -11,9 +11,10 @@ using System;
 namespace StephJob.Migrations
 {
     [DbContext(typeof(StephContext))]
-    partial class StephContextModelSnapshot : ModelSnapshot
+    [Migration("20170904202505_TableNoc2011KeepOnlyCodeAndTitle")]
+    partial class TableNoc2011KeepOnlyCodeAndTitle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

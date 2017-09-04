@@ -1,12 +1,21 @@
-﻿@{
+﻿@model StephJob.Models.IndexModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div>
-    <div class="container">
-        <h1>Industry and profession selector!</h1>
-        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
-    </div>
+<div class="container">
+    <h1>Industry and profession selector!</h1>
+    <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+
+    <form>
+        <div class="form-group">
+            <label for="Industry">Industry</label>
+            <select asp-for="Industry" asp-items="Model.Industries"></select> 
+
+            <label for="Occupation">Occupation</label>
+            <select asp-for="Occupation" asp-items="Model.Occupations"></select> 
+        </div>
+    </form>
 </div>
 
 <div>
