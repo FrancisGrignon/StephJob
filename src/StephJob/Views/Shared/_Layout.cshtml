@@ -11,18 +11,34 @@
     <environment exclude="Development">
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-    <script src="https://use.fontawesome.com/bb13802380.js"></script> 
+    <script src="https://use.fontawesome.com/bb13802380.js"></script>
 </head>
 <body>
     @RenderBody()
 
     <footer class="footer">
         <div class="container">
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="https://github.com/FrancisGrignon/StephJob">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
+            <div class="row">
+                <div class="col-3">
+                    <h3><a href="~/">StephJob</a></h3>
+                </div>
+                <div class="col-3">
+                    <h4>Features</h4>
+                    <a href="~/Review">Review</a><br />
+                    <a href="~/Data">Data source</a>
+                </div>
+                <div class="col-3">
+                    <h4>Company</h4>
+                    <a href="~/About">About</a><br />
+                    <a href="~/Contact">Contact</a>
+                </div>
+                <div class="col-3">
+                    <h4>Follow</h4>
+                    <a href="#">Facebook</a><br />
+                    <a href="https://github.com/FrancisGrignon/StephJob">Github</a><br />
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -1,0 +1,293 @@
+﻿@model StephJob.Models.IndexModel
+@{
+    ViewData["Title"] = "Review";
+}
+<div id="slides-container">
+    <div class="skrollable skrollable-between" id="slides">
+
+        <div class="row" id="slide-1">
+            <div class="container">
+                <h1>Industry and occupation selector!</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="Industry">Industry</label><br />
+                        <select asp-for="Industry" asp-items="Model.Industries" aria-describedby="industryHelp" placeholder="Pick an industry"></select>
+                        <small id="industryHelp" class="form-text text-muted">Pick an industry.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="Occupation">Occupation</label><br />
+                        <select asp-for="Occupation" asp-items="Model.Occupations" aria-describedby="occupationHelp" placeholder="Pick an occupation"></select>
+                        <small id="occupationHelp" class="form-text text-muted">Pick an occupation.</small>
+                    </div>
+                </form>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <!-- Above there must be enough content to push this below the fold -->
+        <div class="row" id="slide-2"
+             data-center-top="opacity:0; background-color: rgb(255,0,0);"
+             data-top-top="opacity:1; background-color: rgb(0,0,255);">
+
+            <div class="container">
+                <h1>Employment Prospects</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <canvas id="bar-chart" width="800" height="450"></canvas>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row" id="slide-3"
+             data-center-top="opacity:0; left:0;"
+             data-top-top="opacity:1; left:0;">
+
+            <div class="container">
+                <h1>Employment Prospects</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <iframe title="What is Gross Domestic Product (GDP)?" width="560" height="315" src="https://www.youtube.com/embed/DB1jGHc8LXA" frameborder="0" allowfullscreen></iframe>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row" id="slide-4"
+             data-center-top="opacity:0; left:0;"
+             data-top-top="opacity:1; left:0;">
+
+            <div class="container">
+                <h1>Industry trend graph, compared with GDP</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gdpModal">
+                    GDP Explanation
+                </button>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row" id="slide-5"
+             data-center-top="opacity:0;"
+             data-top-top="opacity:1;">
+            <div class="container">
+                <h1>Environmental Outlook</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row" id="slide-6"
+             data-center-top="opacity:0;"
+             data-top-top="opacity:1;">
+
+            <div class="container">
+                <h1>Infograph about all the data points</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row" id="slide-7"
+             data-center-top="opacity:0;"
+             data-top-top="opacity:1;">
+            <div class="container">
+                <h1>Contact / Bio</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row" id="slide-8"
+             data-center-top="opacity:0;"
+             data-top-top="opacity:1;">
+            <div class="container">
+                <h1>Data sources</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GDP Modal -->
+<div class="modal fade" id="gdpModal" tabindex="-1" role="dialog" aria-labelledby="gdpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="gdpModalLabel">What is Gross Domestic Product (GDP)?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <iframe title="What is Gross Domestic Product (GDP)?" width="560" height="315" src="https://www.youtube.com/embed/DB1jGHc8LXA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script type="text/javascript">
+        window.onload = function () {
+            new Chart(document.getElementById("bar-chart"), {
+                type: 'bar',
+                data: {
+                    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                    datasets: [
+                        {
+                            label: "Population (millions)",
+                            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                            data: [2478, 5267, 734, 784, 433]
+                        }
+                    ]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'Predicted world population (millions) in 2050'
+                    }
+                }
+            });
+
+            var s = skrollr.init({
+                render: function (data) {
+                    //Log the current scroll position.
+                    console.log(data.curTop);
+                }
+            });
+
+            if (s.isMobile()) {
+                s.destroy();
+            }
+
+            var side1Loop = 0;
+
+            $(document).on('change', '#Industry', function () {
+                //$('#industryImage').attr('src', '/images/welding.jpg');
+
+                var slide1 = $('#slide-1');
+
+                //slide1.fadeOut();
+
+                if (0 == side1Loop)
+                {
+                    slide1.css('background-image', 'url("/images/welding.jpg")');
+                    side1Loop = 1;
+                }
+                else
+                {
+                    slide1.css('background-image', 'url("/images/warehouse.jpg")');
+                    side1Loop = 0;
+                }                 
+
+                //slide1.fadeIn();
+            });
+
+            // Changing background images
+            $('.small-image').click(function () {
+                var imgsrc = $(this).attr('src');
+                $('#large-image').attr('src', imgsrc);
+            });
+        };
+    </script>
+}

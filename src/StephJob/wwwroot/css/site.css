@@ -1,6 +1,6 @@
 ﻿/* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
-    padding-top: 3.5rem;
+    /*padding-top: 3.5rem;*/
 }
 
 /* Sticky footer styles
@@ -13,8 +13,8 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-image: url('https://snappygoat.com/f/4996eee59ee26d30b021c36cf1c35c11f9b200fa/seamless-tile-background-abstract-1315313.jpg');
-    color: white;
+    /*background-image: url('https://snappygoat.com/f/4996eee59ee26d30b021c36cf1c35c11f9b200fa/seamless-tile-background-abstract-1315313.jpg');*/
+    /*color: white;*/
 }
 
 .footer {
@@ -23,32 +23,28 @@ body {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 200px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    line-height: 30px; /* Vertically center the text there */
+    background-color: #808080;
+}
+
+.modal-md {
+    max-width: 600px;
 }
 
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
-
 .container {
     width: auto;
     max-width: 680px;
     padding: 0 15px;
 }
 
-<!-- Skollr -->
+/* Skrollr */
 #slides-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
-
-.slide {
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    height: 50%;
 }
 
 #slides {
@@ -58,9 +54,18 @@ body {
     left: 0px;
 }
 
+.slide {
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 50%;
+}
+
 #slide-1 {
-    /*background: url('https://snappygoat.com/f/65c8fa755c036faef31d19fdbcc43c295f0e48e3/bee-wasp-comic-fig-image-paint-16473.jpg');
-    background-size: 2048px 1365px;*/
+    background: url('/images/warehouse.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: 1890px 1417px;*/
 }
 
 #slide-2 {
@@ -84,3 +89,17 @@ body {
 #slide-2 {
 }
 
+/* Google Map */
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
