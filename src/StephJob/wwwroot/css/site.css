@@ -13,6 +13,8 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
+    background-image: url('https://snappygoat.com/f/4996eee59ee26d30b021c36cf1c35c11f9b200fa/seamless-tile-background-abstract-1315313.jpg');
+    color: white;
 }
 
 .footer {
@@ -20,11 +22,10 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
+    height: 200px;
     line-height: 60px; /* Vertically center the text there */
     background-color: #f5f5f5;
 }
-
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -35,3 +36,51 @@ body {
     max-width: 680px;
     padding: 0 15px;
 }
+
+<!-- Skollr -->
+#slides-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 50%;
+}
+
+#slides {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#slide-1 {
+    /*background: url('https://snappygoat.com/f/65c8fa755c036faef31d19fdbcc43c295f0e48e3/bee-wasp-comic-fig-image-paint-16473.jpg');
+    background-size: 2048px 1365px;*/
+}
+
+#slide-2 {
+}
+
+#slide-3 {
+}
+
+#slide-4 {
+}
+
+#slide-5 {
+}
+
+#slide-6 {
+}
+
+#slide-7 {
+}
+
+#slide-2 {
+}
+
