@@ -28,6 +28,7 @@
             SeedFromCsv<Soc2010>(context, @"wwwroot\datasets\soc_2010_alphabetical_index.csv");
             SeedFromCsv<Noc2011>(context, @"wwwroot\datasets\esdc.noc2011.csv");
             SeedFromCsv<FutureEmployment>(context, @"wwwroot\datasets\FutureOfEmployment.csv");
+            SeedFromCsv<EmploymentAveWeekEarning>(context, @"wwwroot\datasets\employment and average weekly earnings.csv");
 
             context.SaveChanges();
         }

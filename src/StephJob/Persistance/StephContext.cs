@@ -14,6 +14,8 @@
             : base(options)
         {
         }
+   
+        public DbSet<EmploymentAveWeekEarning> EmploymentAveWeekEarnings { get; set; }
 
         public DbSet<FutureEmployment> FutureEmployments { get; set; }
 

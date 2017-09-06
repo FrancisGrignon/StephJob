@@ -9,6 +9,8 @@
     {
         private readonly StephContext context;
 
+        private readonly Lazy<IEmploymentAveWeekEarningRepository> employmentAveWeekEarnings;
+
         private readonly Lazy<IFutureEmploymentRepository> futureEmployments;
 
         private readonly Lazy<INaicsRepository> naics;
@@ -35,6 +37,7 @@
         {
             this.context = context;
 
+            this.employmentAveWeekEarnings = new Lazy<IEmploymentAveWeekEarningRepository>(() => new EmploymentAveWeekEarningRepository(context));
             this.futureEmployments = new Lazy<IFutureEmploymentRepository>(() => new FutureEmploymentRepository(context));
             this.naics = new Lazy<INaicsRepository>(() => new NaicsRepository(context));
             this.noc2011s = new Lazy<INoc2011Repository>(() => new Noc2011Repository(context));
@@ -47,6 +50,9 @@
             this.soc2010s = new Lazy<ISoc2010Repository>(() => new Soc2010Repository(context));
             this.worldBankGdps = new Lazy<IWorldBankGdpRepository>(() => new WorldBankGdpRepository(context));
         }
+
+        public IEmploymentAveWeekEarningRepository EmploymentAveWeekEarnings => employmentAveWeekEarnings.Value;
+
 
         public IFutureEmploymentRepository FutureEmployments => futureEmployments.Value;
 
