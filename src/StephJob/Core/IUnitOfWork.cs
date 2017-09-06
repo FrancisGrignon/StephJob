@@ -4,6 +4,8 @@ namespace StephJob.Core.Repositories
 
     public interface IUnitOfWork : IDisposable
     {
+        IFutureEmploymentRepository FutureEmployments { get; }
+
         INaicsRepository Naics { get; }
 
         INoc2011Repository Noc2011s { get; }

@@ -27,6 +27,7 @@
             SeedFromCsv<Naics>(context, @"wwwroot\datasets\NAICS-SCIAN-2012-Structure_B.csv");
             SeedFromCsv<Soc2010>(context, @"wwwroot\datasets\soc_2010_alphabetical_index.csv");
             SeedFromCsv<Noc2011>(context, @"wwwroot\datasets\esdc.noc2011.csv");
+            SeedFromCsv<FutureEmployment>(context, @"wwwroot\datasets\FutureOfEmployment.csv");
 
             context.SaveChanges();
         }

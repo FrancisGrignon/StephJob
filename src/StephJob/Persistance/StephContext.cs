@@ -15,6 +15,8 @@
         {
         }
 
+        public DbSet<FutureEmployment> FutureEmployments { get; set; }
+
         public DbSet<Naics> Naics { get; set; }
 
         public DbSet<Noc2011> Noc2011s { get; set; }

@@ -9,6 +9,8 @@
     {
         private readonly StephContext context;
 
+        private readonly Lazy<IFutureEmploymentRepository> futureEmployments;
+
         private readonly Lazy<INaicsRepository> naics;
 
         private readonly Lazy<INoc2011Repository> noc2011s;
@@ -33,6 +35,7 @@
         {
             this.context = context;
 
+            this.futureEmployments = new Lazy<IFutureEmploymentRepository>(() => new FutureEmploymentRepository(context));
             this.naics = new Lazy<INaicsRepository>(() => new NaicsRepository(context));
             this.noc2011s = new Lazy<INoc2011Repository>(() => new Noc2011Repository(context));
             this.sdgs372s = new Lazy<ISdgs372Repository>(() => new Sdgs372Repository(context));
@@ -44,6 +47,8 @@
             this.soc2010s = new Lazy<ISoc2010Repository>(() => new Soc2010Repository(context));
             this.worldBankGdps = new Lazy<IWorldBankGdpRepository>(() => new WorldBankGdpRepository(context));
         }
+
+        public IFutureEmploymentRepository FutureEmployments => futureEmployments.Value;
 
         public INaicsRepository Naics => naics.Value;
 
