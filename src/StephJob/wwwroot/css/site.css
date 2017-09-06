@@ -1,9 +1,4 @@
-﻿/* Move down content because we have a fixed navbar that is 3.5rem tall */
-body {
-    padding-top: 3.5rem;
-}
-
-/* Sticky footer styles
+﻿/* Sticky footer styles
 -------------------------------------------------- */
 html {
     position: relative;
@@ -13,6 +8,13 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
+    background-color: black;
+    background-image:url(/images/collage2.png);
+    background-position: top left;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    padding-top: 10px;
 }
 
 .footer {
@@ -22,7 +24,7 @@ body {
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    background-color:dimgrey;
 }
 
 
@@ -30,8 +32,97 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-.container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
+.about {
+    background-image: url(../images/div_background2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    padding-top: 85px;
+    padding-left:35px;
 }
+
+
+.selected {
+    color: white;
+    z-index: 100;
+}
+
+.popup {
+    background-color: #000000;
+    background-image: url('../images/SpeechBubble.png');
+    background-size:contain;
+    border: 1px solid #999999;
+    cursor: default;
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    text-align: left;
+    width: 900px;
+    z-index: 50;
+    padding: 25px 25px 20px;
+    left: 0;
+    right: 0;
+    top: 55px;
+}
+
+.blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+
+.header-icon{
+    margin-right:5px;
+}
+
+.iframe-video {
+    background-image: url(../images/videobackground2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    min-width:879px;
+    min-height:481px;
+}
+
+
+.title {
+    background-image: url(../images/title.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:100px;
+}
+
+.launch{
+    font-size:x-large;
+}
+
+@media (min-height: 576px) {
+    .video {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-height: 800px) {
+
+    .video {
+        margin-top: 75px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-height: 1200px) {
+    .video {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
