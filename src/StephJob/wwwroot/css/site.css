@@ -42,18 +42,27 @@ body, html {
 
 .bgimg-2 {
     background-image: url("/images/welding.jpg");
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .bgimg-3 {
     background-image: url("/images/warehouse.jpg");
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .caption {
     position: absolute;
     left: 0;
     top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption-35 {
+    position: absolute;
+    left: 0;
+    top: 35%;
     width: 100%;
     text-align: center;
     color: #000;
