@@ -10,6 +10,8 @@ namespace StephJob.Core.Repositories
 
         INaicsRepository Naics { get; }
 
+        INaics2DigitRepository Naics2Digits { get; }
+
         INoc2011Repository Noc2011s { get; }
 
         ISdgs372Repository Sdgs372s { get; }
