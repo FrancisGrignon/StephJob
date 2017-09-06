@@ -4,6 +4,7 @@
     using PlutoWeb.Persistence;
     using StephJob.Core.Repositories;
     using StephJob.Persistance;
+    using System;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -30,6 +31,28 @@
             var occupation = unitOfWork.Noc2011s.Find(p => p.Title.Contains(term)).Select(p => new { Name = p.Title, Id = p.Noc2011Id }).Distinct();
 
             return Json(occupation);
+        }
+
+        [HttpGet]
+        public JsonResult GetChart()
+        {
+            var r = new Random();
+            var m = 7000;
+
+            var chart = new Chart()
+            {
+                Labels = new string[] { "Africa", "Asia", "Europe", "Latin America", "North America" },
+                Data = new int[] { r.Next(0, m), r.Next(0, m), r.Next(0, m), r.Next(0, m), r.Next(0, m) }
+            };
+
+            return Json(chart);
+        }
+
+        public class Chart
+        {
+            public string[] Labels { get; set; }
+
+            public int[] Data { get; set; }
         }
         
         protected override void Dispose(bool disposing)

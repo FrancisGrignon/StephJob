@@ -12,9 +12,11 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    margin-bottom: 200px;
     /*background-image: url('https://snappygoat.com/f/4996eee59ee26d30b021c36cf1c35c11f9b200fa/seamless-tile-background-abstract-1315313.jpg');*/
     /*color: white;*/
+    background-image: url(/images/seamless-1315314_640.jpg);
+    background-repeat: repeat;
 }
 
 .footer {
@@ -36,12 +38,14 @@ body {
 /* Not required for template or sticky footer method. */
 .container {
     width: auto;
-    max-width: 680px;
+    max-width: 960px;   
     padding: 0 15px;
+    background-color: whitesmoke;
 }
 
 /* Skrollr */
-#slides-container {
+
+/*#slides-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -59,7 +63,7 @@ body {
     left: 0px;
     width: 50%;
     height: 50%;
-}
+}*/
 
 #slide-1 {
     background: url('/images/warehouse.jpg');
@@ -88,6 +92,88 @@ body {
 
 #slide-2 {
 }
+
+/*.skrollr-desktop body {
+    height: 100% !important;
+}
+
+.parallax-image-wrapper {
+    position: center;
+    left: 0;
+    width: 100%;
+    max-width: 960px;
+    overflow: hidden;
+}
+
+.parallax-image-wrapper-50 {
+    height: 50%;
+    top: -50%;
+}
+
+.parallax-image-wrapper-100 {
+    height: 100%;
+    top: -100%;
+}
+
+.parallax-image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax-image-50 {
+    height: 200%;
+    top: -50%;
+}
+
+.parallax-image-100 {
+    height: 100%;
+    top: 0;
+}
+
+.parallax-image.skrollable-between {
+    display: block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display: none !important;
+}
+
+#skrollr-body {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+.gap {
+    background: transparent center no-repeat;
+    background-size: cover; 
+}
+
+.skrollr .gap {
+    background: transparent !important;
+}
+
+.gap-50 {
+    height: 50%;
+}
+
+.gap-100 {
+    height: 100%;
+}
+
+.header, .content {
+    background: #fff;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
 
 /* Google Map */
 .google-maps {
