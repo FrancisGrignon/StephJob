@@ -83,7 +83,7 @@
     </div>
 </div>
 
-<div class="bgimg-2">
+<div class="bgimg-3">
     <div class="caption-35">
         <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
     </div>
@@ -167,11 +167,17 @@
                 var industryid = $('#Industry').val();
                 var u = 'url(/images/' + industryid + '-1.png)';
                 item.css('background-image', u);
-                backgroundLoop = 1;
-            
-
-
                 item.fadeIn();
+
+                var item2 = $('.bgimg-2');
+                var industryid = $('#Industry').val();
+                var u = 'url(/images/' + industryid + '-2.png)';
+                item2.css('background-image', u);
+           
+                var item3 = $('.bgimg-3');
+                var industryid = $('#Industry').val();
+                var u = 'url(/images/' + industryid + '-3.png)';
+                item3.css('background-image', u);
             });
 
             $(document).on('change', '#Occupation', function () {
