@@ -31,7 +31,7 @@
         {
             var model = new IndexModel();
 
-            model.Industries = unitOfWork.Naics.Find(p => p.Level == 3).Select(p => new { Name = p.Title.EndWithDots(), Id = p.NaicsId }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
+            model.Industries = unitOfWork.Naics2Digits.GetAll().Select(p => new { Name = p.Sector.EndWithDots(), Id = p.Naics2DigitId }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
             model.Occupations = unitOfWork.Noc2011s.GetAll().Select(p => new { Name = p.Title.EndWithDots(), Id = p.Noc2011Id }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
 
             return View(model);
