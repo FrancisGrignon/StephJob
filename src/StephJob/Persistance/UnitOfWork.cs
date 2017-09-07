@@ -19,6 +19,8 @@
 
         private readonly Lazy<INoc2011Repository> noc2011s;
 
+        private readonly Lazy<IRetirementProjectionRepository> retirementProjections;
+
         private readonly Lazy<ISdgs372Repository> sdgs372s;
 
         private readonly Lazy<ISdgs411Repository> sdgs411s;
@@ -44,6 +46,7 @@
             this.naics = new Lazy<INaicsRepository>(() => new NaicsRepository(context));
             this.naics2Digits = new Lazy<INaics2DigitRepository>(() => new Naics2DigitRepository(context));
             this.noc2011s = new Lazy<INoc2011Repository>(() => new Noc2011Repository(context));
+            this.retirementProjections = new Lazy<IRetirementProjectionRepository>(() => new RetirementProjectionRepository(context));
             this.sdgs372s = new Lazy<ISdgs372Repository>(() => new Sdgs372Repository(context));
             this.sdgs411s = new Lazy<ISdgs411Repository>(() => new Sdgs411Repository(context));
             this.sdgs431s = new Lazy<ISdgs431Repository>(() => new Sdgs431Repository(context));
@@ -63,6 +66,8 @@
         public INaics2DigitRepository Naics2Digits => naics2Digits.Value;
 
         public INoc2011Repository Noc2011s => noc2011s.Value;
+
+        public IRetirementProjectionRepository RetirementProjections => retirementProjections.Value;
 
         public ISdgs372Repository Sdgs372s => sdgs372s.Value;
 

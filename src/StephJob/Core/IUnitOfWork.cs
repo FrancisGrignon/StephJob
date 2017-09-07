@@ -14,6 +14,8 @@ namespace StephJob.Core.Repositories
 
         INoc2011Repository Noc2011s { get; }
 
+        IRetirementProjectionRepository RetirementProjections { get; }
+
         ISdgs372Repository Sdgs372s { get; }
 
         ISdgs411Repository Sdgs411s { get; }
