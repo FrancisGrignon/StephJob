@@ -15,6 +15,8 @@
 
         private readonly Lazy<IFutureEmploymentRepository> futureEmployments;
 
+        private readonly Lazy<IGreenGoodServiceRepository> greenGoodServices;
+
         private readonly Lazy<INaicsRepository> naics;
 
         private readonly Lazy<INaics2DigitRepository> naics2Digits;
@@ -48,6 +50,7 @@
             this.employmentAveWeekEarnings = new Lazy<IEmploymentAveWeekEarningRepository>(() => new EmploymentAveWeekEarningRepository(context));
             this.employmentProjections = new Lazy<IEmploymentProjectionRepository>(() => new EmploymentProjectionRepository(context));
             this.futureEmployments = new Lazy<IFutureEmploymentRepository>(() => new FutureEmploymentRepository(context));
+            this.greenGoodServices = new Lazy<IGreenGoodServiceRepository>(() => new GreenGoodServiceRepository(context));
             this.naics = new Lazy<INaicsRepository>(() => new NaicsRepository(context));
             this.naics2Digits = new Lazy<INaics2DigitRepository>(() => new Naics2DigitRepository(context));
             this.noc2011s = new Lazy<INoc2011Repository>(() => new Noc2011Repository(context));
@@ -68,6 +71,8 @@
         public IEmploymentProjectionRepository EmploymentProjections => employmentProjections.Value;
         
         public IFutureEmploymentRepository FutureEmployments => futureEmployments.Value;
+
+        public IGreenGoodServiceRepository GreenGoodServices => greenGoodServices.Value;
 
         public INaicsRepository Naics => naics.Value;
 

@@ -10,6 +10,8 @@ namespace StephJob.Core.Repositories
 
         IFutureEmploymentRepository FutureEmployments { get; }
 
+        IGreenGoodServiceRepository GreenGoodServices { get; }
+
         INaicsRepository Naics { get; }
 
         INaics2DigitRepository Naics2Digits { get; }

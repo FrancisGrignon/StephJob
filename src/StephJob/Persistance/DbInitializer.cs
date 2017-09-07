@@ -33,6 +33,7 @@
             SeedFromCsv<RetirementProjection>(context, @"wwwroot\datasets\Retirement projections.csv");
             SeedFromCsv<EmploymentProjection>(context, @"wwwroot\datasets\Employment projections.csv");
             SeedFromCsv<PhysicalFlowAcccount>(context, @"wwwroot\datasets\Physical flow account for greenhouse gas emissions.csv");
+            SeedFromCsv<GreenGoodService>(context, @"wwwroot\datasets\Green goods and services (US).csv");
 
             context.SaveChanges();
         }

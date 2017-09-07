@@ -10,8 +10,7 @@
             // Empty
         }
 
-        public StephContext(DbContextOptions<StephContext> options)
-: base(options)
+        public StephContext(DbContextOptions<StephContext> options) : base(options)
         {
         }
 
@@ -20,6 +19,8 @@
         public DbSet<EmploymentProjection> EmploymentProjections { get; set; }
 
         public DbSet<FutureEmployment> FutureEmployments { get; set; }
+
+        public DbSet<GreenGoodService> GreenGoodServices { get; set; }
 
         public DbSet<Naics> Naics { get; set; }
 
