@@ -1,4 +1,4 @@
-﻿@model StephJob.Models.IndexModel
+﻿@model StephJob.Models.ReviewModel
 @{
     Layout = "~/Views/Shared/_Layout2.cshtml";
     ViewData["Title"] = "Review";
@@ -29,9 +29,10 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Employment Prospects</h1>
-                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+                <p class="lead">Projection of number of people working as <span id="empProspect"></span></p>
             </div>
             <div class="col-md-6">
+                <canvas id="empProspectChart"></canvas>
                 <canvas id="retirement-projection-chart"></canvas>
             </div>
         </div>
@@ -159,78 +160,49 @@
             //    s.destroy();
             //}
 
-            // pssstShowChart();
+            showEmploymentProspectChart();
+            //RefreshRetirementProjectionChart();
 
             var backgroundLoop = 0;
 
             $(document).on('change', '#Industry', function () {
                 //$('#industryImage').attr('src', '/images/welding.jpg');
+       
 
                 var item = $('.bgimg-1');
 
                 item.fadeOut();
+                var industryid = $('#Industry').val();
+                var u = 'url(/images/' + industryid + '-1.png)';
+                item.css('background-image', u);
+                backgroundLoop = 1;
+            
 
-                if (0 == backgroundLoop) {
-                    item.css('background-image', 'url("/images/welding.jpg")');
-                    backgroundLoop = 1;
-                }
-                else {
-                    item.css('background-image', 'url("/images/warehouse.jpg")');
-                    backgroundLoop = 0;
-                }
 
                 item.fadeIn();
             });
+
+            $(document).on('change', '#Occupation', function () {
+                var t = $("#Occupation option:selected").text();
+                $("#empProspect").text(t);
+                showEmploymentProspectChart();
+               // RefreshRetirementProjectionChart();
+
+            });
         };
 
-        function pssstShowChart() {
-            $.getJSON("/api/getchart", function (data) {
-                var v = new Chart(document.getElementById("bar-chart"), {
-                    type: 'bar',
-                    data: {
-                        labels: data.labels,
-                        datasets: [
-                            {
-                                label: "Population (millions)",
-                                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                                data: data.data
-                            }
-                        ]
-                    },
-                    options: {
-                        legend: { display: false },
-                        title: {
-                            display: true,
-                            text: 'Predicted world population (millions) in 2050'
-                        }
-                    }
-                });
-            });
-        }
-
-        function GetOccupationId()
-        {
+        function GetOccupationId() {
             var occupationId = $('#Occupation').val();
-
             console.info(occupationId);
-
             return occupationId;
-        }
-
-        function GetIndustryId() {
-            var industryId = $('#Industry').val();
-
-            console.info(industryId);
-
-            return industryId;
         }
 
         var retirementProjectionChart;
         var retirementProjectionInitialized = false;
 
+
         function RefreshRetirementProjectionChart() {
             var id = GetOccupationId();
-
             $.getJSON("/api/GetRetirementProjectionChart", { id: id }, function (data) {
                 if (retirementProjectionInitialized) {
                     retirementProjectionChart.data.datasets[0].data = data.data;
@@ -257,10 +229,56 @@
                             }
                         }
                     });
-
                     retirementProjectionInitialized = true;
                 }
             });
+        }
+
+        
+
+
+        var employmentProspectChart;
+        var employmentProspectChartInitialized = false;
+
+        function showEmploymentProspectChart() {
+            var v = $("#Occupation").val();
+
+            $.getJSON("/api/GetEmploymentProspectChart", { value: v }, function (data) {
+
+                if (employmentProspectChartInitialized) {
+
+                    employmentProspectChart.data.datasets[0].data = data.data;
+                    employmentProspectChart.update();
+                }
+                else {
+
+                    employmentProspectChart = new Chart(document.getElementById("empProspectChart"), {
+                        type: 'bar',
+                        data: {
+                            labels: data.labels,
+                            datasets: [
+                                {
+                                    label: "Year",
+                                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#c44196", "#313895", "#469531", "#e4d818", "#2dd2d0", "#118a11"],
+                                    data: data.data
+                                }
+                            ]
+                        },
+                        options: {
+                            legend: { display: false },
+                            title: {
+                                display: true,
+                                text: 'Employment Projection'
+                            }
+                        }
+                    });
+                    employmentProspectChartInitialized = true;
+                }
+            });
+
+
+
+
         }
 
         var gdpChart;

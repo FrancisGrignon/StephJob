@@ -29,7 +29,7 @@
         [Route("Review")]
         public IActionResult Review()
         {
-            var model = new IndexModel();
+            var model = new ReviewModel();
 
             model.Industries = unitOfWork.Naics2Digits.GetAll().Select(p => new { Name = p.Sector.EndWithDots(), Id = p.NaicsCode2Digits }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
             model.Occupations = unitOfWork.Noc2011s.GetAll().Select(p => new { Name = p.Title.EndWithDots(), Id = p.Code }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });

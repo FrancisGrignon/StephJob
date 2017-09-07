@@ -36,17 +36,17 @@ body, html {
 }
 
 .bgimg-1 {
-    background-image: url("/images/warehouse.jpg");
+    background-image: url("/images/11-2.png");
     min-height: 100%;
 }
 
 .bgimg-2 {
-    background-image: url("/images/welding.jpg");
+    background-image: url("/images/11-2.png");
     min-height: 200px;
 }
 
 .bgimg-3 {
-    background-image: url("/images/warehouse.jpg");
+    background-image: url("/images/11-2.png");
     min-height: 200px;
 }
 
