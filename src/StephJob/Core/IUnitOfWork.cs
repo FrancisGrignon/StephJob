@@ -6,6 +6,8 @@ namespace StephJob.Core.Repositories
     {
         IEmploymentAveWeekEarningRepository EmploymentAveWeekEarnings { get; }
 
+        IEmploymentProjectionRepository EmploymentProjections { get; }
+
         IFutureEmploymentRepository FutureEmployments { get; }
 
         INaicsRepository Naics { get; }

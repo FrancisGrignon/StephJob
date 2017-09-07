@@ -11,6 +11,8 @@
 
         private readonly Lazy<IEmploymentAveWeekEarningRepository> employmentAveWeekEarnings;
 
+        private readonly Lazy<IEmploymentProjectionRepository> employmentProjections;
+
         private readonly Lazy<IFutureEmploymentRepository> futureEmployments;
 
         private readonly Lazy<INaicsRepository> naics;
@@ -42,6 +44,7 @@
             this.context = context;
 
             this.employmentAveWeekEarnings = new Lazy<IEmploymentAveWeekEarningRepository>(() => new EmploymentAveWeekEarningRepository(context));
+            this.employmentProjections = new Lazy<IEmploymentProjectionRepository>(() => new EmploymentProjectionRepository(context));
             this.futureEmployments = new Lazy<IFutureEmploymentRepository>(() => new FutureEmploymentRepository(context));
             this.naics = new Lazy<INaicsRepository>(() => new NaicsRepository(context));
             this.naics2Digits = new Lazy<INaics2DigitRepository>(() => new Naics2DigitRepository(context));
@@ -58,6 +61,8 @@
         }
 
         public IEmploymentAveWeekEarningRepository EmploymentAveWeekEarnings => employmentAveWeekEarnings.Value;
+
+        public IEmploymentProjectionRepository EmploymentProjections => employmentProjections.Value;
         
         public IFutureEmploymentRepository FutureEmployments => futureEmployments.Value;
 
