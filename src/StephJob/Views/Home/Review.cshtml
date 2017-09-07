@@ -11,7 +11,7 @@
             <h1>Pssst!</h1>
             <form>
                 <div class="form-group">
-                    <label for="Occupation">What would be your dream job?</label><br />
+                    <label for="Occupation">What is your dream job?</label><br />
                     <select asp-for="Occupation" asp-items="Model.Occupations" placeholder="Pick an occupation"></select>
                 </div>
                 <div class="form-group">
@@ -32,8 +32,11 @@
                 <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
             </div>
             <div class="col-md-6">
-                <canvas id="bar-chart"></canvas>
+                <canvas id="retirement-projection-chart"></canvas>
             </div>
+        </div>
+        <div class="row">
+            <h1><span id="earningByWeek"></span> average by week</h1>
         </div>
     </div>
 </div>
@@ -46,11 +49,15 @@
 
 <div class="slide">
     <div class="container">
-        <h1>Industry trend graph, compared with GDP</h1>
-        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gdpModal">
-            GDP Explanation
-        </button>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Industry trend</h1>
+                <p class="lead">Presently, this industry of <span id="industryName">industry name</span> represents <span id="industryProportion">NA</span> % of the total industry.</p>
+            </div>
+            <div class="col-md-6">
+                <canvas id="gdp-chart"></canvas>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -152,7 +159,7 @@
             //    s.destroy();
             //}
 
-            pssstShowChart();
+            // pssstShowChart();
 
             var backgroundLoop = 0;
 
@@ -200,5 +207,128 @@
                 });
             });
         }
+
+        function GetOccupationId()
+        {
+            var occupationId = $('#Occupation').val();
+
+            console.info(occupationId);
+
+            return occupationId;
+        }
+
+        function GetIndustryId() {
+            var industryId = $('#Industry').val();
+
+            console.info(industryId);
+
+            return industryId;
+        }
+
+        var retirementProjectionChart;
+        var retirementProjectionInitialized = false;
+
+        function RefreshRetirementProjectionChart() {
+            var id = GetOccupationId();
+
+            $.getJSON("/api/GetRetirementProjectionChart", { id: id }, function (data) {
+                if (retirementProjectionInitialized) {
+                    retirementProjectionChart.data.datasets[0].data = data.data;
+                    retirementProjectionChart.update();
+                }
+                else {
+                    retirementProjectionChart = new Chart(document.getElementById("retirement-projection-chart"), {
+                        type: 'bar',
+                        data: {
+                            labels: data.labels,
+                            datasets: [
+                                {
+                                    label: "Retirement",
+                                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                    data: data.data
+                                }
+                            ]
+                        },
+                        options: {
+                            legend: { display: false },
+                            title: {
+                                display: true,
+                                text: 'Predicted world population (millions) in 2050'
+                            }
+                        }
+                    });
+
+                    retirementProjectionInitialized = true;
+                }
+            });
+        }
+
+        var gdpChart;
+        var gdpInitialized = false;
+
+        function RefreshGdpChart() {
+            var id = GetIndustryId();
+
+            $.getJSON("/api/GetGdpChart", { id: id }, function (data) {
+                console.info(data);
+                console.info(data.total);
+                console.info(data.industry);
+
+                if (gdpInitialized) {
+                    gdpChart.data.datasets[0].data = data.industry;
+                   // gdpChart.data.datasets[1].data= data.industry;
+                    gdpChart.update();
+                }
+                else {
+                    gdpChart = new Chart(document.getElementById("gdp-chart"), {
+                        type: 'line',
+                        data: {
+                            labels: data.labels,
+                            datasets: [
+                                {
+                                    label: "Industry GDP",
+                                    backgroundColor: ["#8e5ea2"],
+                                    data: data.industry,
+                                    fill: true
+                                }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            title: {
+                                display: true,
+                                text: 'Industry GDP'
+                            }
+                        }
+                    });
+
+                    gdpInitialized = true;
+                }
+            });
+        }
+
+        function RefreshIndustryIndicators() {
+            var id = GetIndustryId();
+
+            $.getJSON("/api/GetIndustryIndicators", { id: id }, function (data) {
+                console.info(data);
+
+                $('#industryName').text(data.IndustryName);
+                $('#IndustryProportion').text(data.IndustryProportion);
+                $('#earningByWeek').text(data.EarningByWeek);
+            });
+        }
+
+        $(document).on('change', '#Occupation', function () {
+            RefreshRetirementProjectionChart();
+        });
+
+        $(document).on('change', '#Industry', function () {
+            RefreshGdpChart();
+            RefreshIndustryIndicators();
+        });
+
+        RefreshRetirementProjectionChart();
+        RefreshGdpChart();
+        RefreshIndustryIndicators();
     </script>
 }
