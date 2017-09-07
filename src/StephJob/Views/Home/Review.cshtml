@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Employment Prospects</h1>
-                <p class="lead">Projection of number of people working as <span id="empProspect"></span></p>
+                <p class="lead">Projection of number of people working as <span id="empProspect">accomendation service managers</span> and projections of retirements</p>
             </div>
             <div class="col-md-6">
                 <canvas id="empProspectChart"></canvas>
@@ -53,7 +53,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Industry trend</h1>
-                <p class="lead">Presently, this industry of <span id="industryName">industry name</span> represents <span id="industryProportion">NA</span> % of the total industry.</p>
+                <p class="lead">Presently, the <span id="industryName">Accomendation and food service...</span> industry represents <span id="industryProportion">NA</span> % of the total industry.</p>
             </div>
             <div class="col-md-6">
                 <canvas id="gdp-chart"></canvas>
@@ -186,13 +186,17 @@
                 var industryid = $('#Industry').val();
                 var u = 'url(/images/' + industryid + '-3.png)';
                 item3.css('background-image', u);
+
+                var t = $("#Industry option:selected").text();
+                $("#industryName").text(t);
+                
             });
 
             $(document).on('change', '#Occupation', function () {
                 var t = $("#Occupation option:selected").text();
                 $("#empProspect").text(t);
                 showEmploymentProspectChart();
-               // RefreshRetirementProjectionChart();
+                RefreshRetirementProjectionChart();
 
             });
         };
@@ -231,7 +235,7 @@
                             legend: { display: false },
                             title: {
                                 display: true,
-                                text: 'Predicted world population (millions) in 2050'
+                                text: 'Retirement Projection'
                             }
                         }
                     });
@@ -281,11 +285,12 @@
                     employmentProspectChartInitialized = true;
                 }
             });
-
-
-
-
         }
+
+        function GetIndustryId() {
+            return $('#Industry').val();
+        }
+
 
         var gdpChart;
         var gdpInitialized = false;
