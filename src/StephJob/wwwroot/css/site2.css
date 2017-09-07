@@ -28,7 +28,6 @@ body, html {
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
-    opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,6 +38,8 @@ body, html {
     background-image: url("/images/72-1.png");
     min-height: 100%;
 }
+
+
 
 .bgimg-2 {
     background-image: url("/images/72-2.png");
@@ -92,7 +93,7 @@ h3 {
 
 
 .box-white {
-    background-color: #282E34;
+    background-color: #3f3e3f;
     color: #fff;
     padding: 18px;
     font-size: 25px;
