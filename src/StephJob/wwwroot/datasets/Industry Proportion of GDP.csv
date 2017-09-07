@@ -1,0 +1,22 @@
+NaicsCode2Digits,Naics,Y2016,IndustryShareOfGDP
+1,All industries [T001]  (2),"1677593.75",
+11,"Agriculture, forestry, fishing and hunting [11]","28713.33",2%
+21,"Mining, quarrying, and oil and gas extraction [21]","132771.08",8%
+22,Utilities [22],"36883.83",2%
+23,Construction [23] ,"117519.25",7%
+31-33,Manufacturing [31-33] ,"174482.42",10%
+41,Wholesale trade [41] ,"97637.83",6%
+44-45,Retail trade [44-45] ,"92730.42",6%
+48-49,Transportation and warehousing [48-49] ,"74790.83",4%
+51,Information and cultural industries [51] ,"50849.67",3%
+52,Finance and insurance [52] ,"120037.58",7%
+53,Real estate and rental and leasing [53] ,"219793.67",13%
+54,"Professional, scientific and technical services [54]","90983.50",5%
+55,Management of companies and enterprises [55] ,"12214.50",1%
+56,"Administrative and support, waste management and remediation services [56]","42239.92",3%
+61,Educational services [61] ,"88097.83",5%
+62,Health care and social assistance [62] ,"112670.75",7%
+71,"Arts, entertainment and recreation [71]","12301.58",1%
+72,Accommodation and food services [72] ,"35,464.92",2%
+81,Other services (except public administration) [81] ,"32290.92",2%
+91,Public administration [91] ,"107344.25",6%
