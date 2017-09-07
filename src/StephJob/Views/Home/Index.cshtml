@@ -1,6 +1,102 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout2.cshtml";
-    ViewData["Title"] = "Home Page";
+﻿@model StephJob.Models.IndexModel
+@{
+    ViewData["Title"] = "Captain Career";
 }
 
-Index
+@*<div id="header">
+
+    <div class="col-12">
+        <img class="logo" src="~/images/CAPTAIN2.png"/>
+    </div>
+
+</div>*@
+<div id="main" class="container">
+   
+    <div class="row">
+        @*<div class="col-3 about">
+            <p>
+                Give youth information about the industries and professions to show the effects of their choice on them, the economy, and the environment.
+                <a href="/gdp" id="gdp"> What is the GDP?</a>
+            </p>
+
+            <div class="text-center"><a href="/" class="btn btn-success btn-sm"> <i class="fa fa-rocket header-icon" aria-hidden="true"></i>Launch</a> </div>
+        </div>*@
+
+        <div class="col-12 text-center iframe-video video">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/DB1jGHc8LXA" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center launch">
+            <div class="text-center"><a href="/" class="btn btn-success btn-lg"> <i class="fa fa-rocket fa-3x header-icon" aria-hidden="true"></i>Launch</a> </div>
+        </div>
+    </div>
+    @*<div class="row">
+            <div class="col-12 about">
+                <p>
+                    Give youth information about the industries and professions to show the effects of their choice on them, the economy, and the environment.
+                    <a href="/gdp" id="gdp"> What is the GDP?</a>
+                </p>
+
+                <div class="text-center"><a href="/" class="btn btn-success btn-sm"> <i class="fa fa-rocket header-icon" aria-hidden="true"></i>Launch</a> </div>
+            </div>
+    </div>*@
+</div>
+
+@*<div id="container" class="container">
+    <div id="scene" class="scene">
+        <div class="layer" data-depth="0.80"><img src="~/images/manufacturing.jpg" width="150"></div>
+    </div>
+
+</div>*@
+
+<div class="popup">
+    <iframe class="iframe-video" src="https://www.youtube.com/embed/DB1jGHc8LXA" frameborder="0" allowfullscreen></iframe>
+    <a class="close" href="/">Close</a>
+</div>
+
+    
+
+
+
+
+@section Scripts 
+{
+    <script src="~/js/parallax.min.js"></script>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene')
+
+        //var parallax = new Parallax(scene)
+
+        function deselect(e) {
+            $('.popup').slideFadeToggle(function () {
+                e.removeClass('selected');
+            });
+        }
+
+        $(function () {
+            $('#gdp').on('click', function () {
+                if ($(this).hasClass('selected')) {
+                    deselect($(this));
+                } else {
+                    $(this).addClass('selected');
+                    $('#main').addClass('blur-filter');
+                    $('.popup').slideFadeToggle();
+                }
+                return false;
+            });
+
+            $('.close').on('click', function () {
+                deselect($('#gdp'));
+                $('#main').removeClass('blur-filter');
+                return false;
+            });
+        });
+
+        $.fn.slideFadeToggle = function (easing, callback) {
+            return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+        };
+    </script>
+
+
+}
