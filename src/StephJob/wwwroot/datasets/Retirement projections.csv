@@ -1,0 +1,293 @@
+NocCode,Occupation,Y2014,Y2015,Y2016,Y2017,Y2018,Y2019,Y2020,Y2021,Y2022,Y2023,Y2024
+0010,Legislators and senior management,2600,2500,2600,2700,2600,2700,2700,2600,2600,2600,2500
+0111,Financial managers,1800,1700,1700,1800,1900,1900,2000,2000,2000,2000,2000
+0112,Human resources managers,900,1000,1000,1100,1100,1100,1200,1200,1200,1200,1200
+0113,"Purchasing managers & Senior managers - health, education, social and community services and membership organizations",600,600,700,700,700,800,800,800,800,800,800
+0121,"Insurance, real estate and financial brokerage managers",600,600,700,700,700,800,800,800,800,800,800
+0122,"Banking, credit and other investment managers",1400,1400,1400,1400,1500,1500,1600,1600,1600,1500,1500
+0124,"Advertising, marketing and public relations managers & Other business services managers",1100,1100,1200,1200,1300,1300,1300,1300,1400,1400,1400
+0130,Managers in communication (except broadcasting),300,300,400,400,400,400,400,400,400,400,400
+0211,Engineering managers & Architecture and science managers,800,900,900,900,1000,1000,1100,1100,1100,1100,1100
+0213,Computer and information systems managers,1300,1400,1400,1400,1500,1600,1600,1700,1700,1700,1700
+0311,Managers in health care,1100,1200,1200,1300,1300,1300,1300,1300,1300,1300,1300
+0410,Managers in public administration,800,900,900,1000,1100,1100,1200,1200,1200,1200,1200
+0421,Administrators - post-secondary education and vocational training,400,400,400,400,400,400,400,400,400,400,400
+0422,School principals and administrators of elementary and secondary education,1100,1100,1200,1200,1200,1200,1200,1200,1200,1100,1100
+0423,"Managers in social, community and correctional services",1200,1300,1400,1400,1400,1400,1400,1400,1400,1400,1400
+0430,Managers in public protection services,200,200,200,200,200,200,200,200,200,200,200
+0510,"Managers in art, culture, recreation and sport",500,500,400,400,500,500,500,500,500,500,500
+0601,Corporate sales managers,700,700,700,700,700,700,700,800,800,800,800
+0621,Retail and wholesale trade managers,10900,10800,10800,10800,10800,10900,11000,10900,10900,10800,10700
+0631,Restaurant and food service managers,2200,2200,2200,2300,2300,2400,2400,2400,2500,2500,2600
+0632,Accommodation service managers,1100,1100,1200,1200,1300,1300,1300,1300,1400,1400,1400
+0651,"Managers in customer and personal services, n.e.c.",500,500,500,600,600,500,500,500,500,500,500
+0711,Construction managers,1800,1800,1800,1800,1900,1900,1900,1900,1900,1900,1900
+0712,Home building and renovation managers,3700,3700,3800,3800,4000,4000,4100,4100,4100,4100,4100
+0714,Facility operation and maintenance managers,900,900,900,1000,1000,1100,1100,1100,1100,1100,1100
+0731,Managers in transportation,700,700,700,700,700,700,700,700,700,700,700
+0811,Managers in natural resources production and fishing,300,300,300,400,400,400,400,400,400,400,400
+0820,"Managers in agriculture, horticulture and aquaculture",5800,5600,5600,5600,5600,5600,5600,5500,5500,5500,5500
+0910,Managers in manufacturing and utilities,2000,2100,2100,2200,2400,2400,2500,2600,2600,2700,2600
+1111,Financial auditors and accountants,4200,4100,4200,4300,4400,4500,4600,4600,4700,4800,4800
+1112,Financial and investment analysts,1200,1300,1500,1600,1700,1700,1700,1700,1800,1800,1800
+1113,"Securities agents, investment dealers and brokers",400,400,500,500,500,500,500,500,500,500,500
+1114,Other financial officers,2300,2300,2300,2400,2400,2500,2500,2500,2600,2600,2600
+1121,Human resources professionals,2100,2200,2200,2200,2200,2200,2200,2200,2200,2200,2200
+1122,Professional occupations in business management consulting,2800,2600,2600,2600,2600,2600,2600,2600,2600,2600,2600
+1123,"Professional occupations in advertising, marketing and public relations",1800,1800,1900,2000,2000,2000,2100,2100,2100,2200,2200
+1211,"Supervisors, general office and administrative support workers",600,600,500,500,600,600,600,600,600,600,600
+1212,"Supervisors, finance and insurance office workers",1200,1200,1300,1400,1500,1500,1500,1500,1600,1500,1500
+1213,"Supervisors, library, correspondence and related information workers; Supervisors, mail and message distribution occupations & Supervisors, supply chain, tracking and scheduling co-ordination occupations",2100,2200,2200,2300,2400,2400,2500,2500,2500,2500,2500
+1221,Administrative officers,5500,5700,5800,6000,6200,6400,6500,6600,6600,6600,6600
+1222,Executive assistants,1000,1000,900,900,1000,1000,1000,1000,1000,1000,1000
+1223,Human resources and recruitment officers,700,800,900,900,1000,1000,1000,1000,1000,1000,1000
+1224,Property administrators,700,700,700,700,800,800,800,800,800,800,800
+1225,Purchasing agents and officers,1200,1300,1400,1500,1500,1500,1600,1600,1600,1600,1600
+1226,Conference and event planners,500,500,500,500,500,600,600,600,600,600,600
+1227,"Court officers and justices of the peace & Employment insurance, immigration, border services and revenue officers",800,900,1000,1000,1000,1100,1100,1100,1100,1100,1100
+1241,Administrative assistants,3500,3400,3300,3300,3300,3300,3300,3200,3100,3000,2900
+1242,Legal administrative assistants,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000
+1243,Medical administrative assistants,1300,1400,1400,1500,1500,1600,1600,1600,1600,1600,1600
+1250,"Court reporters, transcriptionists, records management technician And statistical officers",600,700,700,700,700,800,800,800,800,800,800
+1311,Accounting technician and bookkeepers,3200,3200,3300,3300,3400,3500,3600,3600,3600,3700,3700
+1312,"Insurance adjusters and claims examiners; Insurance underwriters; Assessors, valuators and appraisers & Customs, ship and other brokers",1400,1300,1300,1300,1300,1400,1400,1400,1400,1400,1500
+1411,General office support workers,5500,5500,5600,5700,5800,5900,6000,6100,6100,6100,6000
+1414,Receptionists,3700,3700,3700,3800,3800,3900,4000,4100,4100,4100,4100
+1415,Personnel  and Court clerks,300,300,300,300,300,300,300,300,300,300,300
+1422,Data entry clerks & Desktop publishing operators and related occupations,1000,1000,1000,1000,1100,1100,1100,1200,1200,1200,1200
+1431,Accounting and related clerks,4200,4300,4400,4500,4600,4700,4800,4700,4700,4600,4500
+1432,Payroll clerks,1200,1300,1400,1400,1500,1500,1600,1600,1600,1600,1600
+1434,"Banking, insurance and other financial clerks & Collectors",1400,1400,1400,1400,1500,1500,1500,1500,1500,1500,1500
+1450,"Library, correspondence and other clerks",1500,1500,1600,1600,1600,1700,1700,1700,1700,1700,1700
+1511,"Mail, postal and related workers",900,900,900,900,900,1000,1000,1000,900,900,900
+1512,Letter carriers,800,900,900,900,900,900,1000,1000,1000,1000,900
+1513,"Couriers, messengers and door-to-door distributors",900,1000,1000,1100,1100,1100,1100,1100,1100,1100,1100
+1521,Shippers and receivers,1900,1900,1900,2100,2200,2300,2400,2400,2500,2600,2600
+1522,Storekeepers and partspersons; Production logistics co-ordinators & Purchasing and inventory control workers,1200,1300,1400,1500,1600,1700,1700,1800,1900,1900,1900
+1525,Dispatchers & Transportation route and crew schedulers,600,600,700,700,800,800,800,800,900,900,900
+2110,Physical science professionals,500,500,500,500,600,600,600,600,600,600,700
+2120,Life science professionals,400,400,500,500,500,500,500,500,500,500,600
+2131,Civil engineers,900,900,900,900,900,1000,1000,1000,1000,1100,1100
+2132,Mechanical engineers,700,700,700,800,800,800,800,900,900,900,900
+2133,Electrical and electronics engineers,600,700,700,700,700,700,700,800,800,800,800
+2134,Chemical engineers,200,200,200,200,200,200,200,200,200,300,300
+2141,Industrial and manufacturing engineers & Metallurgical and materials engineers,300,300,300,300,300,300,300,300,300,300,300
+2143,Mining engineers; Geological engineers & Petroleum engineers,400,400,400,400,400,400,400,400,400,400,400
+2146,"Aerospace engineers & Other professional engineers, n.e.c.",700,700,700,800,800,800,800,800,800,800,800
+2147,Computer engineers (except software engineers and designers),400,400,400,400,500,500,500,500,500,500,500
+2151,Architects,400,400,500,500,500,500,500,500,500,500,500
+2152,Landscape architects; Urban and land use planners & Land surveyors,500,500,600,600,600,600,500,500,500,500,500
+2161,"Mathematicians, statisticians and actuaries",100,100,100,100,100,200,200,200,200,200,200
+2171,Information systems analysts and consultants,1800,1900,2100,2200,2400,2600,2700,2800,2900,3000,3100
+2172,Database analysts and data administrators,300,300,400,400,400,400,500,500,500,500,600
+2173,Software engineers and designers,500,500,600,600,700,700,700,800,800,800,900
+2174,Computer programmers and interactive media developers,1500,1600,1800,1900,2000,2200,2300,2400,2400,2500,2600
+2175,Web designers and developers,300,400,400,400,400,400,500,500,500,500,500
+2210,Technical occupations in physical sciences,600,600,700,700,700,700,700,700,700,700,600
+2221,Biological technologists and technician,200,300,300,300,300,300,300,300,400,400,300
+2222,Agricultural and fish products inspectors; Forestry technologists and technician & Conservation and fishery officers,300,300,300,300,300,300,300,300,400,300,300
+2225,Landscape and horticulture technician and specialists,300,300,300,300,300,300,300,300,300,300,300
+2231,Civil engineering technologists and technician,600,600,600,700,700,700,700,700,700,700,700
+2232,Mechanical engineering technologists and technician,400,400,500,500,500,500,500,500,500,500,500
+2233,Industrial engineering and manufacturing technologists and technician,400,300,400,400,400,400,400,400,400,400,400
+2234,Construction estimators,400,400,400,400,400,400,400,400,400,400,400
+2241,Electrical and electronics engineering technologists and technician,700,700,700,800,800,800,900,900,900,900,900
+2242,Electronic service technician (household and business equipment),1400,1400,1400,1400,1400,1500,1500,1500,1500,1500,1400
+2243,"Industrial instrument technician and mechanics & Aircraft instrument, electrical and avionics mechanics, technician and inspectors",400,400,400,500,500,500,500,500,600,600,600
+2250,"Technical occupations in architecture, drafting, surveying, geomatics",1200,1200,1300,1300,1300,1300,1300,1300,1300,1300,1300
+2261,Non-destructive testers and inspection technician; Engineering inspectors and regulatory officers & Inspectors in public and environmental health and occupational health and safety,1400,1500,1500,1500,1500,1600,1600,1500,1500,1500,1500
+2264,Construction inspectors,500,500,600,500,600,600,600,500,500,500,500
+2270,Transportation officers and controllers,700,700,800,800,800,900,900,900,900,900,900
+2281,Computer network technician,1000,900,1000,1100,1100,1200,1300,1300,1300,1300,1300
+2282,User support technician & Information systems testing technician,1300,1400,1400,1500,1600,1600,1700,1700,1800,1800,1800
+3011,Nursing co-ordinators and supervisors,400,400,400,400,500,500,500,500,500,500,500
+3012,Registered nurses and registered psychiatric nurses,5700,5800,6000,6300,6600,6700,6900,7000,7100,7100,7100
+3111,Specialist physicians,700,700,700,800,800,800,800,800,900,900,900
+3112,General practitioners and family physicians,800,900,1000,1100,1100,1100,1100,1200,1200,1200,1200
+3113,Dentists,300,300,300,300,300,300,400,400,400,400,400
+3114,Veterinarians,200,200,200,200,200,200,200,200,200,200,200
+3120,"Optometrists, chiropractors and other health diagnosing and treating professionals",400,400,400,500,500,500,500,500,500,500,500
+3131,Pharmacists,500,600,600,600,600,600,600,600,600,600,600
+3132,Dietitians and nutritionists,200,200,200,200,200,200,200,200,200,200,200
+3141,Audiologists and speech-language pathologists,200,200,200,200,200,200,200,200,200,200,200
+3142,Physiotherapists,300,300,300,400,400,400,400,400,400,400,400
+3143,Occupational therapists & Other professional occupations in therapy and assessment,300,300,300,300,300,300,400,300,400,400,400
+3211,Medical laboratory technologists & Medical laboratory technician and pathologists' assistants,700,700,700,700,800,800,800,800,800,800,800
+3213,Animal health technologists and veterinary technician,200,200,200,200,200,200,200,200,300,300,300
+3214,"Respiratory therapists, clinical perfusionists and cardiopulmonary technologists; Medical radiation technologists & Medical sonographers",500,500,500,600,600,600,600,600,600,600,700
+3217,"Cardiology technologists and electrophysiological diagnostic technologists, n.e.c. & Other medical technologists and technician (except dental health)",1000,1000,1100,1100,1200,1200,1200,1200,1200,1200,1200
+3220,Technical occupations in dental health care,300,300,300,400,400,400,500,500,500,500,600
+3231,Opticians,100,100,100,100,100,100,100,100,100,100,100
+3232,Practitioners of natural healing; Massage therapists & Other technical occupations in therapy and assessment,500,600,700,700,800,800,800,800,800,800,800
+3233,Licensed practical nurses,1000,1000,1100,1200,1200,1300,1300,1300,1300,1300,1300
+3234,Paramedical occupations,400,400,400,400,400,400,500,500,500,500,500
+3411,Dental assistants,600,600,700,700,700,800,800,800,800,800,800
+3413,"Nurse aides, orderlies and patient service associates & Other assisting occupations in support of health services",5400,5500,5700,6000,6200,6400,6500,6700,6700,6800,6700
+4011,University professors and lecturers,1700,1700,1700,1700,1700,1700,1800,1800,1800,1800,1800
+4012,Post-secondary teaching and research assistants,300,300,300,300,300,300,300,300,300,300,300
+4021,College and other vocational instructors,3600,3600,3500,3500,3700,3700,3700,3700,3600,3500,3500
+4031,Secondary school teachers,2600,2700,2800,2800,2900,3000,3100,3100,3200,3200,3200
+4032,Elementary school and kindergarten teachers,4600,4900,5100,5200,5400,5600,5700,5900,6000,6100,6200
+4033,Educational counsellors,300,300,300,300,300,300,400,400,400,400,400
+4110,"Judges, lawyers and Quebec notaries",1600,1700,1700,1800,1800,1800,1800,1800,1800,1800,1900
+4151,Psychologists,600,600,500,500,500,500,600,600,600,500,500
+4152,Social workers & Probation and parole officers and related occupations,1800,1700,1700,1700,1700,1700,1700,1700,1700,1700,1700
+4153,"Family, marriage and other related counsellors",1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000
+4154,Professional occupations in religion,700,700,800,700,700,700,700,700,700,700,700
+4156,Employment counsellors,300,300,300,300,300,300,300,300,300,300,300
+4161,"Natural and applied science policy researchers, consultants and program officers",400,400,500,500,500,500,500,500,500,500,600
+4162,Economists and economic policy researchers and analysts & Business development officers and marketing researchers and consultants,700,800,800,800,900,900,900,900,900,900,900
+4164,"Social policy researchers, consultants and program officers & Health policy researchers, consultants and program officers",1100,1100,1200,1300,1400,1400,1400,1400,1400,1500,1500
+4166,"Education policy researchers, consultants and program officers & Recreation, sports and fitness policy researchers, consultants and program officers",500,500,500,500,600,600,600,600,600,600,600
+4168,"Program officers unique to government & Other professional occupations in social science, n.e.c.",300,300,300,300,300,300,300,300,300,300,300
+4211,Paralegal and related occupations,400,300,400,400,400,400,400,400,400,400,400
+4212,Social and community service workers,1900,1900,1900,2000,2100,2100,2200,2200,2300,2400,2400
+4214,Early childhood educators and assistants,3300,3400,3500,3600,3700,3900,3900,4000,4100,4200,4200
+4215,Instructors of persons with disabilities,100,100,100,100,100,100,100,100,100,100,100
+4216,Other instructors & Other religious occupations,400,500,500,500,500,500,500,500,500,500,500
+4311,Police officers (except commissioned),900,1000,1100,1200,1300,1500,1500,1600,1600,1700,1700
+4312,Firefighters & Non-commissioned ranks of the Canadian Forces,400,500,500,500,600,600,700,700,700,700,800
+4411,Home child care providers,1400,1400,1300,1300,1400,1400,1400,1400,1400,1400,1300
+4412,"Home support workers, housekeepers and related occupations",1900,2000,2000,2100,2200,2200,2100,2100,2200,2200,2200
+4413,Elementary and secondary school teacher assistants,2300,2400,2400,2500,2600,2600,2500,2500,2600,2500,2500
+4420,Legal and public protection support occupations,400,400,400,400,400,500,500,500,500,600,600
+5110,"Librarians, archivists, conservators and curators",300,300,400,400,400,400,400,400,400,400,400
+5121,Authors and writers; Editors & Journalists,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000
+5125,"Translators, terminologists and interpreters",400,300,400,400,400,400,400,400,400,400,400
+5131,"Producers, directors, choreographers and related occupations & Conductors, composers and arrangers",700,700,600,700,600,700,600,700,600,600,600
+5133,"Musicians and singers; Dancers; Actors and comedians & Painters, sculptors and other visual artists",1500,1600,1600,1600,1600,1600,1600,1600,1600,1500,1500
+5210,"Technical occupations in libraries, public archives, museums and art galleries",500,500,600,600,600,600,500,600,600,500,500
+5221,Photographers,100,100,100,100,100,200,200,200,200,200,200
+5222,"Film/video camera operators; Graphic arts technician; Broadcast technician; Audio/video recording technician; Other tech. / co-ord. occupations in motion picture, broadcasting, arts & Support occupations in motion picture, broadcasting, photography and the performing arts",200,200,200,200,200,300,300,300,300,300,300
+5230,"Announcers and other performers, n.e.c.",100,100,100,100,100,100,100,100,100,100,100
+5241,Graphic designers and illustrators,400,400,500,500,600,600,700,700,800,800,800
+5242,Interior designers and interior decorators,200,200,200,200,200,200,200,300,300,300,300
+5243,"Theatre, fashion, exhibit and other creative designers & Artisans and craftspersons; Patternmakers - textile, leather and fur products",100,100,100,200,200,200,200,200,200,200,200
+5250,"Athletes, coaches, referees and related occupations",400,400,400,500,500,600,600,600,700,700,700
+6211,Retail sales supervisors,2400,2600,2700,2800,2900,2900,3100,3100,3200,3300,3400
+6221,Technical sales specialists - wholesale trade,2200,2300,2300,2500,2600,2600,2800,2900,2900,3000,3100
+6222,Retail and wholesale buyers,700,700,700,700,700,700,700,700,700,700,700
+6231,Insurance agents and brokers,1500,1600,1700,1700,1700,1700,1700,1700,1800,1800,1800
+6232,Real estate agents and salespersons,2100,2100,2100,2200,2200,2200,2200,2300,2300,2300,2300
+6235,Financial sales representatives,1300,1300,1300,1300,1400,1400,1500,1500,1500,1500,1500
+6311,Food service supervisors,800,900,1000,1000,1000,1100,1100,1200,1200,1200,1300
+6312,"Executive housekeepers & Accommodation, travel, tourism and related services supervisors; Customer and information services supervisors; Cleaning supervisors; Other services supervisors",1800,1900,2000,2000,2100,2200,2200,2300,2300,2300,2400
+6321,Chefs,600,600,700,800,800,800,900,900,900,1000,1000
+6322,Cooks,2000,2100,2300,2300,2400,2500,2600,2600,2600,2700,2700
+6331,"Butchers, meat cutters and fishmongers - retail and wholesale",700,700,700,700,800,800,800,800,900,900,900
+6332,Bakers,600,600,600,700,700,700,800,800,800,800,800
+6341,Hairstylists and barbers,1100,1100,1200,1200,1200,1200,1200,1200,1200,1300,1400
+6342,"Tailors, dressmakers, furriers and milliners & Shoe repairers and shoemakers; Jewellers, jewellery and watch repairers and related occupations; Upholsterers; Funeral directors and embalmers",1100,1100,1100,1100,1100,1100,1100,1100,1100,1100,1100
+6411,Sales and account representatives - wholesale trade (non-technical),4100,4200,4400,4600,4700,4900,4900,5100,5200,5300,5400
+6421,Retail salespersons,7600,7600,7900,8100,8100,8200,8300,8300,8400,8400,8500
+6511,Maîtres d'hôtel and hosts/hostesses,200,200,200,300,300,300,300,300,300,400,400
+6512,Bartenders,200,200,200,200,200,200,200,200,200,200,200
+6513,Food and beverage servers,900,900,1000,1000,1100,1100,1200,1200,1300,1300,1400
+6521,Travel counsellors,300,300,300,300,300,300,300,300,300,300,300
+6522,Pursers and flight attendants,100,100,100,100,100,100,100,100,100,100,200
+6523,"Airline ticket and service agents & Ground and water transport ticket agents, cargo service representatives and related clerks",200,200,200,200,200,200,200,200,200,200,200
+6525,Hotel front desk clerks,300,300,300,300,400,400,400,400,400,400,400
+6530,Tourism and amusement services occupations,200,200,200,200,200,200,200,300,300,300,300
+6541,Security guards and related security service occupations,2600,2600,2600,2600,2600,2600,2500,2500,2500,2500,2500
+6551,Customer services representatives - financial institutions,2300,2400,2500,2600,2600,2700,2800,2700,2700,2700,2700
+6552,Other customer and information services representatives,2800,2800,2900,3000,3100,3100,3100,3100,3100,3200,3200
+6561,"Image, social and other personal consultants; Pet groomers and animal care workers & Other personal service occupations",300,300,400,400,400,400,400,500,500,500,500
+6562,"Estheticians, electrologists and related occupations",400,400,400,500,500,500,500,600,600,600,600
+6611,Cashiers,2900,3000,3100,3200,3300,3400,3600,3600,3700,3700,3700
+6621,Service station attendants,200,200,200,200,200,200,200,200,200,200,200
+6622,"Store shelf stockers, clerks and order fillers",2700,2700,2800,2900,2900,2900,2900,2900,3000,3000,3000
+6623,Other sales related occupations,500,500,500,500,500,500,500,400,400,400,400
+6711,"Food counter attendants, kitchen helpers and related support occupations",2400,2500,2600,2800,2900,3100,3200,3300,3400,3500,3600
+6720,"Support occupations in accommodation, travel and amusement services",600,600,600,600,600,600,600,600,600,600,600
+6731,Light duty cleaners,4900,5000,5200,5400,5600,5800,6000,6100,6200,6200,6300
+6732,Specialized cleaners,900,900,1000,1000,1000,1100,1100,1100,1200,1200,1200
+6733,"Janitors, caretakers and building superintendents",4500,4500,4500,4700,4800,5000,5100,5200,5200,5200,5300
+6740,"Other service support and related occupations, n.e.c.",1300,1300,1300,1300,1300,1300,1300,1300,1300,1300,1300
+7201,"Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations",400,400,400,400,400,500,500,500,500,500,500
+7202,"Contractors and supervisors, electrical trades and telecommunications occupations",600,600,600,600,600,700,700,700,700,700,700
+7203,"Contractors and supervisors, pipefitting trades",200,200,200,200,200,200,200,200,200,200,300
+7204,"Contractors and supervisors, carpentry trades",500,500,500,600,600,600,600,700,700,700,700
+7205,"Contractors and supervisors, other construction trades, installers, repairers and servicers",1400,1400,1500,1500,1700,1700,1800,1800,1900,1900,1900
+7231,Machinists and machining and tooling inspectors & Tool and die makers,800,800,900,1000,1100,1100,1200,1300,1300,1300,1300
+7233,Sheet metal workers; Boilermakers; Structural metal and platework fabricators and fitters & Ironworkers,400,400,500,500,600,600,600,700,700,700,700
+7237,Welders and related machine operators,1000,1000,1100,1200,1300,1400,1400,1500,1600,1700,1700
+7241,Electricians (except industrial and power system),1800,1900,1900,2000,2000,2000,2000,2000,2100,2100,2100
+7242,Industrial electricians & Power system electricians,600,700,700,700,700,700,700,700,700,700,700
+7244,Electrical power line and cable workers & Telecommunications line and cable workers,400,500,500,500,500,500,500,500,500,500,500
+7246,Telecommunications installation and repair workers & Cable television service and maintenance technician,600,600,600,600,600,600,600,600,600,600,600
+7251,Plumbers,500,600,600,500,600,600,600,600,700,700,700
+7252,"Steamfitters, pipefitters and sprinkler system installers & Gas fitters",400,400,400,400,400,400,500,500,500,500,500
+7271,Carpenters,1900,1900,2100,2200,2200,2300,2300,2400,2400,2400,2400
+7272,Cabinetmakers,200,200,200,200,200,200,200,200,200,200,200
+7281,Bricklayers,100,100,100,200,200,200,200,200,200,200,200
+7282,Concrete finishers & Tilesetters,200,200,200,200,300,300,300,300,300,400,400
+7284,"Plasterers, drywall installers and finishers and lathers",300,300,300,300,400,400,400,400,500,500,500
+7291,Roofers and shinglers,200,300,300,300,300,300,300,400,400,400,400
+7292,Glaziers & Insulators,200,300,300,300,300,300,300,300,300,400,400
+7294,Painters and decorators (except interior decorators),500,600,600,600,700,700,700,700,800,800,800
+7295,Floor covering installers,200,200,200,200,200,200,200,200,200,200,200
+7301,"Contractors and supervisors, mechanic trades & Supervisors, printing and related occupations",1400,1400,1500,1500,1600,1700,1700,1800,1800,1800,1800
+7302,"Contractors and supervisors, heavy equipment operator crews",900,900,900,900,1000,1000,1100,1100,1100,1100,1200
+7304,"Supervisors, railway transport operations & Supervisors, motor transport and other ground transit operators",1100,1100,1100,1100,1100,1100,1100,1100,1200,1200,1200
+7311,Construction millwrights and industrial mechanics,2000,2000,2000,2000,2000,2100,2100,2100,2000,2000,2000
+7312,Heavy-duty equipment mechanics,1400,1400,1500,1500,1600,1600,1600,1600,1600,1600,1600
+7313,Refrigeration and air conditioning mechanics; machine fitters & Elevator constructors and mechanics,800,800,900,900,900,900,900,900,900,900,900
+7314,Railway carmen/women & Aircraft mechanics and aircraft inspectors,300,300,400,400,400,400,400,400,400,400,400
+7321,"Automotive service technician, truck and bus mechanics and mechanical repairers",1900,1900,2000,2100,2200,2200,2300,2400,2400,2500,2500
+7322,Motor vehicle body repairers,400,400,500,500,500,500,500,500,500,600,600
+7330,Other mechanics and related repairers,700,700,700,700,700,700,800,800,800,800,800
+7360,Train crew operating occupations,100,100,200,200,200,200,300,300,300,300,300
+7370,"Crane operators, drillers and blasters",300,300,300,400,400,400,500,500,500,500,500
+7380,"Printing press operators and other trades and related occupations, n.e",500,600,600,600,700,700,700,800,800,800,800
+7441,Residential and commercial installers and servicers,600,600,600,600,700,700,800,800,800,800,800
+7442,"Waterworks and gas maintenance workers; Pest controllers and fumigators & Other installers, repairers and servicers",300,300,300,400,400,400,400,400,400,400,400
+7450,Longshore workers and material handlers,2700,2800,3000,3300,3500,3600,3700,3800,4000,4000,4100
+7511,Transport truck drivers,7300,7400,7600,7800,7900,8100,8400,8600,8700,8800,8900
+7512,"Bus drivers, subway operators and other transit operators",2100,2200,2200,2300,2300,2400,2400,2500,2500,2500,2600
+7513,Taxi and limousine drivers and chauffeurs,1000,1100,1100,1100,1200,1200,1200,1200,1300,1300,1300
+7514,Delivery and courier service drivers,1500,1400,1500,1500,1500,1500,1500,1500,1600,1600,1600
+7521,Heavy equipment operators(except crane),1400,1400,1500,1600,1700,1700,1800,1800,1900,1900,1900
+7522,Public works maintenance equipment operators and related workers,500,500,500,600,600,600,700,700,700,700,700
+7530,Other transport equipment operators and related maintenance workers,400,500,500,500,500,600,600,700,700,700,700
+7610,Trades helpers and labourers,1300,1300,1400,1500,1600,1600,1800,1800,1900,1900,1900
+7620,"Public works and other labourers, n.e.c.",300,300,400,400,400,400,400,500,500,500,500
+8211,"Supervisors, logging and forestry",100,100,100,100,100,200,200,200,200,200,200
+8220,"Contractors and supervisors, mining, oil and gas",500,600,600,600,600,700,700,700,700,700,700
+8231,Underground production and development miners,300,300,300,300,300,400,400,400,400,400,400
+8232,"Oil and gas well drillers, servicers, testers and related workers",400,400,400,400,500,500,500,500,500,500,600
+8241,Logging machinary operators,300,300,300,300,300,300,300,300,300,300,300
+8252,"Agricultural service contractors, farm supervisors and specialized livestock workers & Contractors and supervisors, landscaping, grounds maintenance and horticulture services",1700,1700,1700,1700,1700,1700,1700,1700,1800,1800,1800
+8260,Fishing vessel masters and fishermen/women,500,500,500,500,500,500,500,500,500,400,400
+8410,Mine service workers and operatorsin oil and gas drilling,100,100,200,200,200,200,200,200,200,200,200
+8420,Logging and forestry workers,400,400,400,400,400,400,400,400,400,400,400
+8431,General farm workers,800,800,900,900,900,1000,1000,1000,1100,1100,1100
+8432,Nursery and greenhouse workers,200,200,200,200,200,200,200,200,200,200,200
+8440,Other workers in fishing and trapping and hunting occupations,100,100,100,100,100,100,100,100,100,100,100
+8611,Harvesting labourers; Aquaculture and marine harvest labourers & Logging and forestry labourers,200,200,200,200,200,200,200,200,200,200,200
+8612,Landscaping and grounds maintenance labourers,1000,1100,1100,1100,1100,1100,1100,1100,1100,1100,1100
+8614,"Mine labourers & Oil and gas drilling, servicing and related labourers",200,200,200,200,200,200,200,200,200,200,200
+9211,"Supervisors, mineral and metal processing & Supervisors, petroleum, gas and chemical processing and utilities",600,700,700,800,800,900,900,900,900,900,900
+9213,"Supervisors, food, beverage and related products processing",400,500,500,500,500,600,600,600,600,600,600
+9214,"Supervisors, plastic and rubber products manufacturing; Supervisors, forest products processing & Supervisors, textile, fabric, fur and leather products processing and manufacturing",600,700,700,700,700,800,800,800,800,800,800
+9220,"Supervisors, assembly and fabrication",1600,1600,1600,1700,1700,1800,1800,1800,1800,1800,1800
+9230,Central control and process operatorsin processing and manufacturing,300,400,400,500,500,500,500,500,500,500,500
+9240,Utilities equipment operators and controllers,600,600,700,700,800,900,900,900,900,900,900
+9410,machine operators and related workers in mineral and metal products pr,1700,1800,2000,2100,2200,2300,2400,2500,2500,2500,2500
+9420,"machine operators and related workers in chemical, plastic and rubber",700,700,800,800,900,1000,1000,1000,1100,1100,1100
+9431,Sawmill machine operators; Other wood processing machine operators; Lumber graders and other wood processing inspectors and graders & Woodworking machine operators,500,500,500,600,600,600,600,700,700,700,700
+9432,Pulp mill machine operators; Papermaking and finishing machine operators& Paper converting machine operators,400,400,400,500,500,500,500,500,500,500,500
+9441,"Textile fibre and yarn, hide and pelt processing machine operators and workers; Weavers, knitters and other fabric making occupations; Fabric, fur and leather cutters & Inspectors and graders, textile, fabric, fur and leather products manufacturing",400,400,400,400,400,400,400,400,400,400,400
+9446,Industrial sewing machine operators,700,800,800,800,800,800,800,800,800,800,800
+9461,"Process control and machine operators, food, beverage and related products processing; Fish and seafood plant workers & Testers and graders, food, beverage and related products processing",1200,1200,1300,1300,1300,1400,1400,1400,1400,1400,1400
+9462,"Industrial butchers and meat cutters, poultry preparers and related workers",400,400,400,500,500,500,500,500,500,500,500
+9470,Printing equipment operators and related occupations,400,400,400,500,500,500,500,500,500,500,500
+9521,"Aircraft assemblers and aircraft assembly inspectors; Motor vehicle assemblers, inspectors and testers & Mechanical assemblers and inspectors",900,900,900,1000,1100,1100,1200,1200,1300,1300,1400
+9523,"Electronics assemblers, fabricators, inspectors and testers",300,300,400,400,400,500,500,500,500,500,500
+9524,"Assemblers and inspectors, electrical appliance, apparatus and equipment manufacturing & Assemblers, fabricators and inspectors, industrial electrical motors and transformers",300,300,300,400,400,400,400,400,500,500,500
+9531,"Boat assemblers and inspectors; Plastic products assemblers, finishers and inspectors; Industrial painters, coaters and metal finishing process operators& Other products assemblers, finishers and inspectors",1300,1300,1400,1400,1500,1500,1600,1600,1700,1700,1700
+9532,Furniture and fixture assemblers and inspectors;  Other wood products assemblers and inspectors & Furniture finishers and refinishers,800,800,900,900,1000,1000,1000,1100,1100,1100,1100
+9611,Labourers in mineral and metal processing & Labourers in metal fabrication,600,700,700,700,700,700,800,800,800,800,800
+9613,Labourers in chemical products processing and utilities & Labourers in rubber and plastic products manufacturing,400,400,400,400,400,400,400,400,400,400,400
+9614,"Labourers in wood, pulp and paper processing",400,500,500,500,500,500,500,500,500,500,500
+9616,"Labourers in textile processing & Other labourers in processing, manufacturing and utilities",900,900,1000,1000,1000,1000,1000,1000,1000,1000,1000
+9617,"Labourers in food, beverage and related products processing & Labourers in fish and seafood processing",1100,1200,1200,1200,1200,1200,1300,1200,1300,1300,1200

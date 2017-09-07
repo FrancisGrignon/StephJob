@@ -1,13 +1,19 @@
 ﻿namespace StephJob.Core.Domain
 {
-    public class Naics2Digit
+    public class Naics
     {
-        public int Naics2DigitId { get; set; }
-
         public int NaicsId { get; set; }
 
-        public string NaicsCode2Digits { get; set; }
+        public int Level { get; set; }
 
-        public string Sector { get; set; }
+        public string Hierarchical { get; set; }
+
+        public int Code { get; set; }
+
+        public string Title { get; set; }
+
+        public string Superscript { get; set; }
+
+        public string Definition { get; set; }
     }
 }

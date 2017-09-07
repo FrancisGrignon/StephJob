@@ -10,20 +10,27 @@
             // Empty
         }
 
-        public StephContext(DbContextOptions<StephContext> options)
-            : base(options)
-        {
+        public StephContext(DbContextOptions<StephContext> options) : base(options)
+        {
         }
-   
+
         public DbSet<EmploymentAveWeekEarning> EmploymentAveWeekEarnings { get; set; }
 
+        public DbSet<EmploymentProjection> EmploymentProjections { get; set; }
+
         public DbSet<FutureEmployment> FutureEmployments { get; set; }
+
+        public DbSet<GreenGoodService> GreenGoodServices { get; set; }
 
         public DbSet<Naics> Naics { get; set; }
 
         public DbSet<Naics2Digit> Naics2Digits { get; set; }
 
         public DbSet<Noc2011> Noc2011s { get; set; }
+
+        public DbSet<PhysicalFlowAcccount> PhysicalFlowAcccounts { get; set; }
+
+        public DbSet<RetirementProjection> RetirementProjections { get; set; }
 
         public DbSet<Sdgs372> Sdgs372s { get; set; }
 

@@ -11,9 +11,10 @@ using System;
 namespace StephJob.Migrations
 {
     [DbContext(typeof(StephContext))]
-    partial class StephContextModelSnapshot : ModelSnapshot
+    [Migration("20170907015507_AddTablePhysicalFlowAcccounts")]
+    partial class AddTablePhysicalFlowAcccounts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -105,26 +106,6 @@ namespace StephJob.Migrations
                     b.HasKey("FutureEmploymentId");
 
                     b.ToTable("FutureEmployments");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.GreenGoodService", b =>
-                {
-                    b.Property<int>("GreenGoodServiceId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("GgsEmployment");
-
-                    b.Property<decimal>("GgsPercent");
-
-                    b.Property<string>("Industry");
-
-                    b.Property<string>("NaicsCode2Digit");
-
-                    b.Property<int>("TotalEmployment");
-
-                    b.HasKey("GreenGoodServiceId");
-
-                    b.ToTable("GreenGoodServices");
                 });
 
             modelBuilder.Entity("StephJob.Core.Domain.Naics", b =>

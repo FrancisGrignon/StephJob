@@ -30,6 +30,10 @@
             SeedFromCsv<FutureEmployment>(context, @"wwwroot\datasets\FutureOfEmployment.csv");
             SeedFromCsv<EmploymentAveWeekEarning>(context, @"wwwroot\datasets\employment and average weekly earnings.csv");
             SeedFromCsv<Naics2Digit>(context, @"wwwroot\datasets\statcan_naics2012_2digits.csv");
+            SeedFromCsv<RetirementProjection>(context, @"wwwroot\datasets\Retirement projections.csv");
+            SeedFromCsv<EmploymentProjection>(context, @"wwwroot\datasets\Employment projections.csv");
+            SeedFromCsv<PhysicalFlowAcccount>(context, @"wwwroot\datasets\Physical flow account for greenhouse gas emissions.csv");
+            SeedFromCsv<GreenGoodService>(context, @"wwwroot\datasets\Green goods and services (US).csv");
 
             context.SaveChanges();
         }
