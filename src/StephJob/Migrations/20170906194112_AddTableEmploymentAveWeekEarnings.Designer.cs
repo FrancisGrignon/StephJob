@@ -11,9 +11,10 @@ using System;
 namespace StephJob.Migrations
 {
     [DbContext(typeof(StephContext))]
-    partial class StephContextModelSnapshot : ModelSnapshot
+    [Migration("20170906194112_AddTableEmploymentAveWeekEarnings")]
+    partial class AddTableEmploymentAveWeekEarnings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,22 +81,6 @@ namespace StephJob.Migrations
                     b.HasKey("NaicsId");
 
                     b.ToTable("Naics");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.Naics2Digit", b =>
-                {
-                    b.Property<int>("Naics2DigitId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("NaicsCode2Digits");
-
-                    b.Property<int>("NaicsId");
-
-                    b.Property<string>("Sector");
-
-                    b.HasKey("Naics2DigitId");
-
-                    b.ToTable("Naics2Digits");
                 });
 
             modelBuilder.Entity("StephJob.Core.Domain.Noc2011", b =>

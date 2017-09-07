@@ -11,36 +11,15 @@ using System;
 namespace StephJob.Migrations
 {
     [DbContext(typeof(StephContext))]
-    partial class StephContextModelSnapshot : ModelSnapshot
+    [Migration("20170906182105_AddTableFutureEmployment")]
+    partial class AddTableFutureEmployment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("StephJob.Core.Domain.EmploymentAveWeekEarning", b =>
-                {
-                    b.Property<int>("EmploymentAveWeekEarningId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<decimal>("AverageWeeklyEarning2016");
-
-                    b.Property<string>("Geo");
-
-                    b.Property<string>("Naics");
-
-                    b.Property<string>("NaicsCode2Digits");
-
-                    b.Property<string>("RefDate");
-
-                    b.Property<string>("Variable");
-
-                    b.HasKey("EmploymentAveWeekEarningId");
-
-                    b.ToTable("EmploymentAveWeekEarnings");
-                });
 
             modelBuilder.Entity("StephJob.Core.Domain.FutureEmployment", b =>
                 {
@@ -80,22 +59,6 @@ namespace StephJob.Migrations
                     b.HasKey("NaicsId");
 
                     b.ToTable("Naics");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.Naics2Digit", b =>
-                {
-                    b.Property<int>("Naics2DigitId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("NaicsCode2Digits");
-
-                    b.Property<int>("NaicsId");
-
-                    b.Property<string>("Sector");
-
-                    b.HasKey("Naics2DigitId");
-
-                    b.ToTable("Naics2Digits");
                 });
 
             modelBuilder.Entity("StephJob.Core.Domain.Noc2011", b =>

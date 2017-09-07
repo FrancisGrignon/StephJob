@@ -4,9 +4,11 @@
     {
         public static string EndWithDots(this string value)
         {
-            if (20 < value.Length)
+            const int max = 30;
+
+            if (max < value.Length)
             {
-                return value.Substring(0, 20) + "...";
+                return value.Substring(0, max) + "...";
             }
 
             return value;

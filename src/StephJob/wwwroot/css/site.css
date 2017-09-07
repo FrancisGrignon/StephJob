@@ -9,11 +9,11 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
     background-color: black;
-    background-image:url(/images/collage2.png);
+    background-image: url(/images/collage2.png);
     background-position: top left;
-    background-repeat:no-repeat;
-    background-size:cover;
-    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     padding-top: 10px;
 }
 
@@ -24,7 +24,7 @@ body {
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
-    background-color:dimgrey;
+    background-color: dimgrey;
 }
 
 
@@ -39,7 +39,7 @@ body {
     background-repeat: no-repeat;
     color: black;
     padding-top: 85px;
-    padding-left:35px;
+    padding-left: 35px;
 }
 
 
@@ -51,7 +51,7 @@ body {
 .popup {
     background-color: #000000;
     background-image: url('../images/SpeechBubble.png');
-    background-size:contain;
+    background-size: contain;
     border: 1px solid #999999;
     cursor: default;
     display: none;
@@ -74,8 +74,8 @@ body {
 }
 
 
-.header-icon{
-    margin-right:5px;
+.header-icon {
+    margin-right: 5px;
 }
 
 .iframe-video {
@@ -85,21 +85,21 @@ body {
     background-repeat: no-repeat;
     padding-top: 70px;
     padding-bottom: 60px;
-    min-width:879px;
-    min-height:481px;
+    min-width: 879px;
+    min-height: 481px;
 }
 
 
 .title {
     background-image: url(../images/title.png);
-    background-size:contain;
-    background-position:center;
-    background-repeat:no-repeat;
-    height:100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
 }
 
-.launch{
-    font-size:x-large;
+.launch {
+    font-size: x-large;
 }
 
 @media (min-height: 576px) {
@@ -123,6 +123,3 @@ body {
         margin-bottom: 50px;
     }
 }
-
-
-
