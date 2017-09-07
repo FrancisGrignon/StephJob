@@ -1,40 +1,41 @@
-﻿@model StephJob.Models.IndexModel
+﻿
 @{
     ViewData["Title"] = "Captain Career";
 }
 
-<div>
+<div class="container">
+    <div class="row about">
+        <h1>Captain Career</h1>
+        
+        <p>
+           We aim to show how one <b>indicator (8.6.1): <i>proportion of youth (15 to 24 years) not in education, employment, or training</i></b>, can relate to everyday living.  
+            <b>The indicator negatively correlated with the economic growth,</b> and through the tool, youth and job seekers will see the big picture of their career prospects, and how it relates to ‘productive and decent work’ as well as to ‘sustain, inclusive and sustainable economic growth’, of Goal 8.
+        </p>
+        <p>
+            This tool was created to help non-data user see just how easy it is to create and tell a story from data. Our story is centred around the United Nations Sustainable Development Goal 8:
+        </p>
+        <p class="indicator">
+            Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all
+        </p>
+    </div>
 
+    <div class="row">
+        <div class="col-12">
+            <img class="comicimg" src="~/images/Page1.png" />
+            <img class="comicimg" src="~/images/Page2.png" />
+            <img class="comicimg" src="~/images/Page3.png" />
+        </div>
 
-            @*<div class="col-4 text-center">
-                <div class="row icon top">
-                    <div class="col-12">
-                        <img src="~/images/CAPTAIN2.png" class="pull-right"/>
-                    </div>
-                </div>
-                <div class="row icon">
-                    <div class="col-12">
-                        <img src="~/images/CAPTAIN2.png" class="pull-right" />
-                    </div>
-                </div>
-            </div>*@
-
-            <div class="iframe-video">
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/DB1jGHc8LXA" frameborder="0" allowfullscreen></iframe>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
             <div class="launch">
-                <a href="/" class="btn btn-danger btn-lg"> <i class="fa fa-rocket fa-2x header-icon" aria-hidden="true"></i>Launch</a>
+                <a href="/review"><img class="launch" src="~/images/launchbutton.png" /></a>
             </div>
-
-
-        @*<div class="row">
-            <div class="col-12 text-center launch">
-                <div class="text-center"><a href="/" class="btn btn-success btn-lg"> <i class="fa fa-rocket fa-3x header-icon" aria-hidden="true"></i>Launch</a> </div>
-            </div>
-        </div>*@
-
-
+        </div>
+    </div>
 </div>
+
 
 @section Scripts 
 {

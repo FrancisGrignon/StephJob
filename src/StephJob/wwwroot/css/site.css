@@ -1,28 +1,13 @@
 ﻿/* Sticky footer styles
 -------------------------------------------------- */
-html {
-    position: relative;
-    min-height: 100%;
-}
+
 
 body {
     background-color: black;
     background-image: url(/images/collage4.png);
     background-position: CENTER;
-    background-repeat: no-repeat;
     color: white;
     padding-top: 10px;
-    background-size: cover;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color:dimgrey;
 }
 
 
@@ -31,58 +16,37 @@ body {
 /* Not required for template or sticky footer method. */
 
 
-.iframe-video {
-    background-image: url(../images/div_background3.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 210px;
-    padding-left:385px;
-    min-height: 580px;
-    width:1000px;
+img.comicimg {
+    width: 874px;
+    height: 1240px;
+    display: block;
+    margin: auto;
 }
 
-.launch{
-    padding-left:560px;
+.container{
+    min-width: 100%;
 }
 
-@media (min-height: 576px) {
-    .video {
-        //margin-top: 150px;
-        margin-bottom: 20px;
-        //margin-left:250px;
-    }
-
-
-
+.about{
+    background-color:lightgrey;
+    color:black;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding:20px;
 }
 
-@media (min-height: 992px) {
-
-    .video {
-        //margin-top: 75px;
-        margin-bottom: 30px;
-        //margin-left: 250px;
-    }
-
-
+.indicator {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-style: italic;
 }
 
-@media (min-height: 1200px) {
-    .video {
-        margin-top: 150px;
-        margin-bottom: 50px;
-        margin-left: 0px;
-    }
-
-
-
+.launch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
 }
-
-img {
-    height: 300px;
-    width: 300px;
-}
-
 
 
