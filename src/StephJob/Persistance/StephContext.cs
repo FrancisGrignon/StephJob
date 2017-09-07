@@ -22,6 +22,8 @@
 
         public DbSet<GreenGoodService> GreenGoodServices { get; set; }
 
+        public DbSet<GrossDomesticProduct> GrossDomesticProducts { get; set; }
+
         public DbSet<Naics> Naics { get; set; }
 
         public DbSet<Naics2Digit> Naics2Digits { get; set; }

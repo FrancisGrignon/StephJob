@@ -12,6 +12,8 @@ namespace StephJob.Core.Repositories
 
         IGreenGoodServiceRepository GreenGoodServices { get; }
 
+        IGrossDomesticProductRepository GrossDomesticProducts { get; }
+
         INaicsRepository Naics { get; }
 
         INaics2DigitRepository Naics2Digits { get; }
