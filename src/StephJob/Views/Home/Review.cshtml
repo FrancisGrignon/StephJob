@@ -33,7 +33,11 @@
             </div>
             <div class="col-md-6">
                 <canvas id="empProspectChart"></canvas>
+                <canvas id="retirement-projection-chart"></canvas>
             </div>
+        </div>
+        <div class="row">
+            <h1><span id="earningByWeek"></span> average by week</h1>
         </div>
     </div>
 </div>
@@ -46,11 +50,15 @@
 
 <div class="slide">
     <div class="container">
-        <h1>Industry trend graph, compared with GDP</h1>
-        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gdpModal">
-            GDP Explanation
-        </button>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Industry trend</h1>
+                <p class="lead">Presently, this industry of <span id="industryName">industry name</span> represents <span id="industryProportion">NA</span> % of the total industry.</p>
+            </div>
+            <div class="col-md-6">
+                <canvas id="gdp-chart"></canvas>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -278,6 +286,73 @@
 
 
         }
-        
+
+        var gdpChart;
+        var gdpInitialized = false;
+
+        function RefreshGdpChart() {
+            var id = GetIndustryId();
+
+            $.getJSON("/api/GetGdpChart", { id: id }, function (data) {
+                console.info(data);
+                console.info(data.total);
+                console.info(data.industry);
+
+                if (gdpInitialized) {
+                    gdpChart.data.datasets[0].data = data.industry;
+                   // gdpChart.data.datasets[1].data= data.industry;
+                    gdpChart.update();
+                }
+                else {
+                    gdpChart = new Chart(document.getElementById("gdp-chart"), {
+                        type: 'line',
+                        data: {
+                            labels: data.labels,
+                            datasets: [
+                                {
+                                    label: "Industry GDP",
+                                    backgroundColor: ["#8e5ea2"],
+                                    data: data.industry,
+                                    fill: true
+                                }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            title: {
+                                display: true,
+                                text: 'Industry GDP'
+                            }
+                        }
+                    });
+
+                    gdpInitialized = true;
+                }
+            });
+        }
+
+        function RefreshIndustryIndicators() {
+            var id = GetIndustryId();
+
+            $.getJSON("/api/GetIndustryIndicators", { id: id }, function (data) {
+                console.info(data);
+
+                $('#industryName').text(data.IndustryName);
+                $('#IndustryProportion').text(data.IndustryProportion);
+                $('#earningByWeek').text(data.EarningByWeek);
+            });
+        }
+
+        $(document).on('change', '#Occupation', function () {
+            RefreshRetirementProjectionChart();
+        });
+
+        $(document).on('change', '#Industry', function () {
+            RefreshGdpChart();
+            RefreshIndustryIndicators();
+        });
+
+        RefreshRetirementProjectionChart();
+        RefreshGdpChart();
+        RefreshIndustryIndicators();
     </script>
 }

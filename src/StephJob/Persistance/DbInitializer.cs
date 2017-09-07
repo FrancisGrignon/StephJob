@@ -34,6 +34,7 @@
             SeedFromCsv<EmploymentProjection>(context, @"wwwroot\datasets\Employment projections.csv");
             SeedFromCsv<PhysicalFlowAcccount>(context, @"wwwroot\datasets\Physical flow account for greenhouse gas emissions.csv");
             SeedFromCsv<GreenGoodService>(context, @"wwwroot\datasets\Green goods and services (US).csv");
+            SeedFromCsv<GrossDomesticProduct>(context, @"wwwroot\datasets\Gross domestic product (GDP) at basic prices.csv");
 
             context.SaveChanges();
         }
