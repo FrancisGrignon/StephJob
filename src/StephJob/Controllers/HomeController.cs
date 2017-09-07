@@ -15,20 +15,29 @@
         private readonly IUnitOfWork unitOfWork;
 
         public HomeController(StephContext stephContext)
-       {
+        {
             this.unitOfWork = new UnitOfWork(stephContext);
         }
 
         public IActionResult Index()
         {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
+        [Route("Review")]
+        public IActionResult Review()
+        {
             var model = new IndexModel();
 
-            model.Industries = unitOfWork.Naics.Find(p => p.Level == 2).Select(p => new { Name = p.Title, Id = p.NaicsId }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
-            model.Occupations = unitOfWork.Noc2011s.GetAll().Select(p => new { Name = p.Title, Id = p.Noc2011Id }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
+            model.Industries = unitOfWork.Naics2Digits.GetAll().Select(p => new { Name = p.Sector.EndWithDots(), Id = p.Naics2DigitId }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
+            model.Occupations = unitOfWork.Noc2011s.GetAll().Select(p => new { Name = p.Title.EndWithDots(), Id = p.Noc2011Id }).Distinct().OrderBy(p => p.Name).Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
 
             return View(model);
         }
 
+        [Route("About")]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -36,6 +45,7 @@
             return View();
         }
 
+        [Route("Contact")]
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -48,18 +58,20 @@
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public JsonResult GetIndustry(string term = "")
+        [Route("Data")]
+        public IActionResult Data()
         {
-            var industry = unitOfWork.Naics.Find(p => p.Title.Contains(term)).Select(p => new { Name = p.Title, Id = p.NaicsId }).Distinct();
+            ViewData["Message"] = "Your application description page.";
 
-            return Json(industry);
+            return View();
         }
 
-        public JsonResult GetOccupation(string term = "")
+        [Route("Bio")]
+        public IActionResult Bio()
         {
-            var occupation = unitOfWork.Noc2011s.Find(p => p.Title.Contains(term)).Select(p => new { Name = p.Title, Id = p.Noc2011Id }).Distinct();
+            ViewData["Message"] = "Your application description page.";
 
-            return Json(occupation);
+            return View();
         }
 
         protected override void Dispose(bool disposing)

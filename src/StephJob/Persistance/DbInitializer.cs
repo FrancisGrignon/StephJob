@@ -27,6 +27,13 @@
             SeedFromCsv<Naics>(context, @"wwwroot\datasets\NAICS-SCIAN-2012-Structure_B.csv");
             SeedFromCsv<Soc2010>(context, @"wwwroot\datasets\soc_2010_alphabetical_index.csv");
             SeedFromCsv<Noc2011>(context, @"wwwroot\datasets\esdc.noc2011.csv");
+            SeedFromCsv<FutureEmployment>(context, @"wwwroot\datasets\FutureOfEmployment.csv");
+            SeedFromCsv<EmploymentAveWeekEarning>(context, @"wwwroot\datasets\employment and average weekly earnings.csv");
+            SeedFromCsv<Naics2Digit>(context, @"wwwroot\datasets\statcan_naics2012_2digits.csv");
+            SeedFromCsv<RetirementProjection>(context, @"wwwroot\datasets\Retirement projections.csv");
+            SeedFromCsv<EmploymentProjection>(context, @"wwwroot\datasets\Employment projections.csv");
+            SeedFromCsv<PhysicalFlowAcccount>(context, @"wwwroot\datasets\Physical flow account for greenhouse gas emissions.csv");
+            SeedFromCsv<GreenGoodService>(context, @"wwwroot\datasets\Green goods and services (US).csv");
 
             context.SaveChanges();
         }

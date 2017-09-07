@@ -1,0 +1,204 @@
+﻿@model StephJob.Models.IndexModel
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["Title"] = "Review";
+}
+
+<!-- Main body -->
+<div class="bgimg-1">
+    <div class="caption">
+        <div class="container box-white">
+            <h1>Pssst!</h1>
+            <form>
+                <div class="form-group">
+                    <label for="Occupation">What would be your dream job?</label><br />
+                    <select asp-for="Occupation" asp-items="Model.Occupations" placeholder="Pick an occupation"></select>
+                </div>
+                <div class="form-group">
+                    <label for="Industry">In which industry?</label><br />
+                    <select asp-for="Industry" asp-items="Model.Industries" placeholder="Pick an industry"></select>
+                </div>
+            </form>
+        </div>
+        <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Employment Prospects</h1>
+                <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+            </div>
+            <div class="col-md-6">
+                <canvas id="bar-chart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bgimg-2">
+    <div class="caption-35">
+        <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="container">
+        <h1>Industry trend graph, compared with GDP</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gdpModal">
+            GDP Explanation
+        </button>
+    </div>
+</div>
+
+<div class="bgimg-2">
+    <div class="caption-35">
+        <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="container">
+        <h1>Industry trend graph, compared with GDP</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gdpModal">
+            GDP Explanation
+        </button>
+    </div>
+</div>
+
+<div class="bgimg-2">
+    <div class="caption-35">
+        <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="container">
+        <h1>Environmental Outlook</h1>
+        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+    </div>
+</div>
+
+<div class="bgimg-2">
+    <div class="caption-35">
+        <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h3><a href="~/">Captain Career</a></h3>
+            </div>
+            <div class="col-3">
+                <h4>Features</h4>
+                <a href="~/Review">Review</a><br />
+                <a href="~/Data">Data source</a>
+            </div>
+            <div class="col-3">
+                <h4>Company</h4>
+                <a href="~/About">About</a><br />
+                <a href="~/Contact">Contact</a><br />
+                <a href="~/Bio">Bio</a>
+            </div>
+            <div class="col-3">
+                <h4>Follow</h4>
+                <a href="#">Facebook</a><br />
+                <a href="https://github.com/FrancisGrignon/StephJob">Github</a><br />
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GDP Modal -->
+<div class="modal fade" id="gdpModal" tabindex="-1" role="dialog" aria-labelledby="gdpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="gdpModalLabel">What is Gross Domestic Product (GDP)?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <iframe title="What is Gross Domestic Product (GDP)?" width="560" height="315" src="https://www.youtube.com/embed/DB1jGHc8LXA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script type="text/javascript">
+        window.onload = function () {
+            //var s = skrollr.init({
+            //    forceHeight: false,
+            //    render: function (data) {
+            //        //Log the current scroll position.
+            //        console.log(data.curTop);
+            //    }
+            //});
+
+            //if (s.isMobile()) {
+            //    s.destroy();
+            //}
+
+            pssstShowChart();
+
+            var backgroundLoop = 0;
+
+            $(document).on('change', '#Industry', function () {
+                //$('#industryImage').attr('src', '/images/welding.jpg');
+
+                var item = $('.bgimg-1');
+
+                item.fadeOut();
+
+                if (0 == backgroundLoop) {
+                    item.css('background-image', 'url("/images/welding.jpg")');
+                    backgroundLoop = 1;
+                }
+                else {
+                    item.css('background-image', 'url("/images/warehouse.jpg")');
+                    backgroundLoop = 0;
+                }
+
+                item.fadeIn();
+            });
+        };
+
+        function pssstShowChart() {
+            $.getJSON("/api/getchart", function (data) {
+                var v = new Chart(document.getElementById("bar-chart"), {
+                    type: 'bar',
+                    data: {
+                        labels: data.labels,
+                        datasets: [
+                            {
+                                label: "Population (millions)",
+                                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                data: data.data
+                            }
+                        ]
+                    },
+                    options: {
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: 'Predicted world population (millions) in 2050'
+                        }
+                    }
+                });
+            });
+        }
+    </script>
+}

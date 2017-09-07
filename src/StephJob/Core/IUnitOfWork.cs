@@ -4,9 +4,23 @@ namespace StephJob.Core.Repositories
 
     public interface IUnitOfWork : IDisposable
     {
+        IEmploymentAveWeekEarningRepository EmploymentAveWeekEarnings { get; }
+
+        IEmploymentProjectionRepository EmploymentProjections { get; }
+
+        IFutureEmploymentRepository FutureEmployments { get; }
+
+        IGreenGoodServiceRepository GreenGoodServices { get; }
+
         INaicsRepository Naics { get; }
 
+        INaics2DigitRepository Naics2Digits { get; }
+
         INoc2011Repository Noc2011s { get; }
+
+        IPhysicalFlowAcccountRepository PhysicalFlowAcccounts { get; }
+
+        IRetirementProjectionRepository RetirementProjections { get; }
 
         ISdgs372Repository Sdgs372s { get; }
 

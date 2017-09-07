@@ -11,9 +11,10 @@ using System;
 namespace StephJob.Migrations
 {
     [DbContext(typeof(StephContext))]
-    partial class StephContextModelSnapshot : ModelSnapshot
+    [Migration("20170906195733_AddTableNaics2Digits")]
+    partial class AddTableNaics2Digits
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,53 +43,6 @@ namespace StephJob.Migrations
                     b.ToTable("EmploymentAveWeekEarnings");
                 });
 
-            modelBuilder.Entity("StephJob.Core.Domain.EmploymentProjection", b =>
-                {
-                    b.Property<int>("EmploymentProjectionId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("NocCode");
-
-                    b.Property<string>("Occupation");
-
-                    b.Property<int>("Y2014")
-                        .HasColumnName("2014");
-
-                    b.Property<int>("Y2015")
-                        .HasColumnName("2015");
-
-                    b.Property<int>("Y2016")
-                        .HasColumnName("2016");
-
-                    b.Property<int>("Y2017")
-                        .HasColumnName("2017");
-
-                    b.Property<int>("Y2018")
-                        .HasColumnName("2018");
-
-                    b.Property<int>("Y2019")
-                        .HasColumnName("2019");
-
-                    b.Property<int>("Y2020")
-                        .HasColumnName("2020");
-
-                    b.Property<int>("Y2021")
-                        .HasColumnName("2021");
-
-                    b.Property<int>("Y2022")
-                        .HasColumnName("2022");
-
-                    b.Property<int>("Y2023")
-                        .HasColumnName("2023");
-
-                    b.Property<int>("Y2024")
-                        .HasColumnName("2024");
-
-                    b.HasKey("EmploymentProjectionId");
-
-                    b.ToTable("EmploymentProjections");
-                });
-
             modelBuilder.Entity("StephJob.Core.Domain.FutureEmployment", b =>
                 {
                     b.Property<int>("FutureEmploymentId")
@@ -105,26 +59,6 @@ namespace StephJob.Migrations
                     b.HasKey("FutureEmploymentId");
 
                     b.ToTable("FutureEmployments");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.GreenGoodService", b =>
-                {
-                    b.Property<int>("GreenGoodServiceId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("GgsEmployment");
-
-                    b.Property<decimal>("GgsPercent");
-
-                    b.Property<string>("Industry");
-
-                    b.Property<string>("NaicsCode2Digit");
-
-                    b.Property<int>("TotalEmployment");
-
-                    b.HasKey("GreenGoodServiceId");
-
-                    b.ToTable("GreenGoodServices");
                 });
 
             modelBuilder.Entity("StephJob.Core.Domain.Naics", b =>
@@ -177,82 +111,6 @@ namespace StephJob.Migrations
                     b.HasKey("Noc2011Id");
 
                     b.ToTable("Noc2011s");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.PhysicalFlowAcccount", b =>
-                {
-                    b.Property<int>("PhysicalFlowAcccountId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Geography");
-
-                    b.Property<string>("Sector");
-
-                    b.Property<int>("Y2010")
-                        .HasColumnName("2010");
-
-                    b.Property<int>("Y2011")
-                        .HasColumnName("2011");
-
-                    b.Property<int>("Y2012")
-                        .HasColumnName("2012");
-
-                    b.Property<int>("Y2013")
-                        .HasColumnName("2013");
-
-                    b.Property<int>("Y2014")
-                        .HasColumnName("2014");
-
-                    b.HasKey("PhysicalFlowAcccountId");
-
-                    b.ToTable("PhysicalFlowAcccounts");
-                });
-
-            modelBuilder.Entity("StephJob.Core.Domain.RetirementProjection", b =>
-                {
-                    b.Property<int>("RetirementProjectionId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("NocCode");
-
-                    b.Property<string>("Occupation");
-
-                    b.Property<int>("Y2014")
-                        .HasColumnName("2014");
-
-                    b.Property<int>("Y2015")
-                        .HasColumnName("2015");
-
-                    b.Property<int>("Y2016")
-                        .HasColumnName("2016");
-
-                    b.Property<int>("Y2017")
-                        .HasColumnName("2017");
-
-                    b.Property<int>("Y2018")
-                        .HasColumnName("2018");
-
-                    b.Property<int>("Y2019")
-                        .HasColumnName("2019");
-
-                    b.Property<int>("Y2020")
-                        .HasColumnName("2020");
-
-                    b.Property<int>("Y2021")
-                        .HasColumnName("2021");
-
-                    b.Property<int>("Y2022")
-                        .HasColumnName("2022");
-
-                    b.Property<int>("Y2023")
-                        .HasColumnName("2023");
-
-                    b.Property<int>("Y2024")
-                        .HasColumnName("2024");
-
-                    b.HasKey("RetirementProjectionId");
-
-                    b.ToTable("RetirementProjections");
                 });
 
             modelBuilder.Entity("StephJob.Core.Domain.Sdgs372", b =>
