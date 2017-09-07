@@ -6,12 +6,12 @@
     {
         public int EmploymentProjectionId { get; set; }
 
-        public int NocCode{ get; set; }
+        public int NocCode { get; set; }
 
-        public string Occupation{ get; set; }
+        public string Occupation { get; set; }
 
         [Column("2014")]
-        public int Y2014{ get; set; }
+        public int Y2014 { get; set; }
 
         [Column("2015")]
         public int Y2015 { get; set; }
@@ -39,7 +39,7 @@
 
         [Column("2023")]
         public int Y2023 { get; set; }
-        
+
         [Column("2024")]
         public int Y2024 { get; set; }
     }

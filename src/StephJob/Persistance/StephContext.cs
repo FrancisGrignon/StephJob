@@ -11,10 +11,10 @@
         }
 
         public StephContext(DbContextOptions<StephContext> options)
-            : base(options)
-        {
+: base(options)
+        {
         }
-   
+
         public DbSet<EmploymentAveWeekEarning> EmploymentAveWeekEarnings { get; set; }
 
         public DbSet<EmploymentProjection> EmploymentProjections { get; set; }
@@ -26,6 +26,8 @@
         public DbSet<Naics2Digit> Naics2Digits { get; set; }
 
         public DbSet<Noc2011> Noc2011s { get; set; }
+
+        public DbSet<PhysicalFlowAcccount> PhysicalFlowAcccounts { get; set; }
 
         public DbSet<RetirementProjection> RetirementProjections { get; set; }
 

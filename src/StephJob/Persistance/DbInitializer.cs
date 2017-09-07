@@ -32,7 +32,7 @@
             SeedFromCsv<Naics2Digit>(context, @"wwwroot\datasets\statcan_naics2012_2digits.csv");
             SeedFromCsv<RetirementProjection>(context, @"wwwroot\datasets\Retirement projections.csv");
             SeedFromCsv<EmploymentProjection>(context, @"wwwroot\datasets\Employment projections.csv");
-
+            SeedFromCsv<PhysicalFlowAcccount>(context, @"wwwroot\datasets\Physical flow account for greenhouse gas emissions.csv");
 
             context.SaveChanges();
         }
