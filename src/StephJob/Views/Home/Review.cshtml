@@ -12,11 +12,11 @@
             <form>
                 <div class="form-group">
                     <label for="Occupation">What is your dream job?</label><br />
-                    <select asp-for="Occupation" asp-items="Model.Occupations" placeholder="Pick an occupation"></select><a href="http://noc.esdc.gc.ca/English/NOC/OccupationIndex.aspx?ver=16" target="_blank">?</a>
+                    <select asp-for="Occupation" asp-items="Model.Occupations" placeholder="Pick an occupation" class="select-style"></select><a href="http://noc.esdc.gc.ca/English/NOC/OccupationIndex.aspx?ver=16" target="_blank">?</a>
 </div>
                 <div class="form-group">
                     <label for="Industry">In which industry?</label><br />
-                    <select asp-for="Industry" asp-items="Model.Industries" placeholder="Pick an industry"></select><a href="http://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=118464" target="_blank">?</a>
+                    <select asp-for="Industry" asp-items="Model.Industries" placeholder="Pick an industry" class="select-style"></select><a href="http://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=118464" target="_blank">?</a>
                 </div>
             </form>
         </div>
@@ -29,11 +29,11 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Employment Prospects</h1>
-                <p class="lead">Projection of changes in the number of people working as <span id="empProspect">accommodation service managers</span> and projections of retirements</p>
+                <p class="lead">Projection of changes in the number of people working as <span id="empProspect">accommodation service managers</span> and projections of retirements.</p>
                 <hr />
-                <h2><span id="earningByWeek"></span> in average weekly earnings</h2>
+                <h2><span id="earningByWeek"></span> in average weekly earnings in this industry.</h2>
                 <hr />
-                <h2>For every vacant position, there are/is <span id="unemploymentJobVacanciesRatio"></span> unemployed persons.</h2>
+                <h2>For every vacant position, there are/is <span id="unemploymentJobVacanciesRatio"></span> unemployed persons in this industry.</h2>
             </div>
             <div class="col-md-6">
                 <canvas id="empProspectChart"></canvas>
@@ -74,7 +74,7 @@
         <h1>Environmental Outlook</h1>
         <h2><span id="greenGoodsAndServices"></span>% of the total employment in the industry provides green goods and services.</h2>
         <hr />
-        <h2><span id="physicalFlowAcccount"></span>% of the physical flow account for greenhouse gas emissions (GEA) by year in kilotonnes.</h2>
+        <h2>The industry represents <span id="physicalFlowAcccount"></span>% of the physical flow account for greenhouse gas emissions (GEA) by year in kilotonnes.</h2>
     </div>
 </div>
 

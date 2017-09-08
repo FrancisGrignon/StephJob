@@ -4,7 +4,7 @@
     {
         public static string EndWithDots(this string value)
         {
-            const int max = 30;
+            const int max = int.MaxValue;
 
             if (max < value.Length)
             {
