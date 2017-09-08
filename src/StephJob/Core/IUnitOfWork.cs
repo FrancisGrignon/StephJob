@@ -38,6 +38,8 @@ namespace StephJob.Core.Repositories
 
         ISoc2010Repository Soc2010s { get; }
 
+        IUnemploymentJobVacanciesRatioRepository UnemploymentJobVacanciesRatios { get; }
+
         IWorldBankGdpRepository WorldBankGdps { get; }
 
         int Complete();
