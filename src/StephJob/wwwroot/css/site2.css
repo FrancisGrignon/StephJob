@@ -101,6 +101,11 @@ h3 {
     width: 50%;
 }
 
+#slide1
+{
+    position:center;
+    width:50%;
+}
 
 .slide {
     color: #ddd;

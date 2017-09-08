@@ -24,14 +24,14 @@
     </div>
 </div>
 
-<div id="slide1" class="slide">
-    <div class="container" data-center="opacity: 1"  data-center-top="opacity: 0">
+<div class="slide">
+    <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <h1>Employment Prospects</h1>
                 <p class="lead">Projection of number of people working as <span id="empProspect">accomendation service managers</span> and projections of retirements</p>
             </div>
-            <div class="col-md-6" >
+            <div class="col-md-6">
                 <canvas id="empProspectChart"></canvas>
                 <canvas id="retirement-projection-chart"></canvas>
             </div>
@@ -48,8 +48,8 @@
     </div>
 </div>
 
-<div id="slide2" class="slide fixed">
-    <div class="container" data-center="opacity: 1"  data-center-top="opacity: 0">
+<div class="slide">
+    <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <h1>Industry trend</h1>
@@ -69,7 +69,7 @@
 </div>
 
 <div class="slide">
-    <div class="container" data-center="opacity: 1"  data-center-top="opacity: 0">
+    <div class="container">
         <h1>Industry trend graph, compared with GDP</h1>
         <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gdpModal">
@@ -85,7 +85,7 @@
 </div>
 
 <div class="slide">
-    <div class="container" data-center="opacity: 1"  data-center-top="opacity: 0">
+    <div class="container">
         <h1>Environmental Outlook</h1>
         <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
     </div>
@@ -148,13 +148,13 @@
     {
     <script type="text/javascript">
         window.onload = function () {
-            var s = skrollr.init({
-                forceHeight: false,
-                render: function (data) {
-                    //Log the current scroll position.
-                    console.log(data.curTop);
-                }
-            });
+            //var s = skrollr.init({
+            //    forceHeight: false,
+            //    render: function (data) {
+            //        //Log the current scroll position.
+            //        console.log(data.curTop);
+            //    }
+            //});
 
             //if (s.isMobile()) {
             //    s.destroy();
