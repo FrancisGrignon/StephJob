@@ -197,7 +197,7 @@
             }
             else
             {
-                indicator.UnemploymentJobVacanciesRatio = unemployment.Y2016.ToString("F2") + "%";
+                indicator.UnemploymentJobVacanciesRatio = unemployment.Y2016.ToString("F2");
             }
 
             return Json(indicator);
