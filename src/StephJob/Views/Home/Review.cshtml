@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="row">
-            <h1><span id="earningByWeek"></span> average by week</h1>
+            <h1>Weekly Earning: <span id="earningByWeek"></span></h1>
         </div>
     </div>
 </div>
@@ -70,24 +70,14 @@
 
 <div class="slide">
     <div class="container">
-        <h1>Industry trend graph, compared with GDP</h1>
-        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gdpModal">
-            GDP Explanation
-        </button>
-    </div>
-</div>
-
-<div class="bgimg-2">
-    <div class="caption-35">
-        <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
-    </div>
-</div>
-
-<div class="slide">
-    <div class="container">
         <h1>Environmental Outlook</h1>
-        <p class="lead">lorem asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf asdf asdf sadfasdf asdf</p>
+        <div class="row">
+            <div class="col-4">
+                <h2><span id="greenGoodsAndServices"></span> GGS</h2>
+                <p>Green Goods and Services (GGS) provides a measure of employment in industries that produce goods or provide services that benefit the environment.</p>
+            </div>
+        </div>
+        
     </div>
 </div>
 
@@ -243,10 +233,7 @@
                 }
             });
         }
-
         
-
-
         var employmentProspectChart;
         var employmentProspectChartInitialized = false;
 
@@ -341,9 +328,10 @@
             $.getJSON("/api/GetIndustryIndicators", { id: id }, function (data) {
                 console.info(data);
 
-                $('#industryName').text(data.IndustryName);
-                $('#IndustryProportion').text(data.IndustryProportion);
-                $('#earningByWeek').text(data.EarningByWeek);
+                $('#industryName').text(data.industryName);
+                $('#IndustryProportion').text(data.industryProportion);
+                $('#earningByWeek').text(data.earningByWeek);
+                $('#greenGoodsAndServices').text(data.greenGoodsAndServices);
             });
         }
 

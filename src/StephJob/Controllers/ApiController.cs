@@ -141,18 +141,18 @@
             }
             else
             {
-                indicator.EarningByWeek = earningByWeek.AverageWeeklyEarning2016.ToString("C") + " CAD";
+                indicator.EarningByWeek = earningByWeek.AverageWeeklyEarning2016.ToString("C") + "CAD";
             }
 
             var greenGood = unitOfWork.GreenGoodServices.Find(p => p.NaicsCode2Digit == id).SingleOrDefault();
 
             if (null == greenGood)
             {
-                indicator.GreenGoodAndServiceJobs = "NA";
+                indicator.GreenGoodsAndServices = "NA";
             }
             else
             {
-                indicator.GreenGoodAndServiceJobs = greenGood.GgsPercent.ToString();
+                indicator.GreenGoodsAndServices = greenGood.GgsPercent.ToString();
             }
 
             var naics = unitOfWork.Naics2Digits.Find(p => p.NaicsCode2Digits == id).SingleOrDefault();
@@ -175,8 +175,10 @@
             }
             else
             {
-                indicator.IndustryProportion = (gdpIndustry.Y2017 * 100 / gdpTotal.Y2017).ToString("C");
+                indicator.IndustryProportion = (gdpIndustry.Y2017 * 100 / gdpTotal.Y2017).ToString("F2");
             }
+
+            //var physicalFlow = unitOfWork.PhysicalFlowAcccounts.Find(p => p.)
 
             return Json(indicator);
         }
@@ -198,7 +200,7 @@
 
             public string EnergyUtilisation { get; set; }
 
-            public string GreenGoodAndServiceJobs { get; set; }
+            public string GreenGoodsAndServices { get; set; }
 
             public string GreenHouseGas { get; set; }
 
