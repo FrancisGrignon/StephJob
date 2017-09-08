@@ -186,7 +186,7 @@
             }
             else
             {
-                indicator.PhysicalFlowAcccount = physicalFlow.Unknown2;
+                indicator.PhysicalFlowAcccount = physicalFlow.Kilotonnes.ToString("F2");
             }
 
             var unemployment = unitOfWork.UnemploymentJobVacanciesRatios.Find(p => p.NaicsCode2Digits == id).SingleOrDefault();
