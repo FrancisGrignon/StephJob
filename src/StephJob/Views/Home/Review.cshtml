@@ -55,6 +55,7 @@
             <div class="col-md-6">
                 <h1>Industry Trend</h1>
                 <p class="lead">The <span id="industryName">accommodation and food services </span> industry represents approximately <span id="industryProportion">NA</span>% of the total economy.</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">What is the GDP?</button>
             </div>
             <div class="col-md-6">
                 <canvas id="gdp-chart"></canvas>
@@ -81,6 +82,27 @@
 <div class="bgimg-3">
     <div class="caption-35">
         <i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">What is the GDP?</h4>
+            </div>
+            <div class="modal-body">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/DB1jGHc8LXA?ecver=1" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -125,6 +147,10 @@
             //if (s.isMobile()) {
             //    s.destroy();
             //}
+
+            $("#myModal").on('hidden.bs.modal', function (e) {
+                $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+            });
 
             showEmploymentProspectChart();
             //RefreshRetirementProjectionChart();

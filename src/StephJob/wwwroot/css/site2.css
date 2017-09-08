@@ -141,3 +141,7 @@ h3 {
 .select-style {
     max-width: 75%;
 }
+
+.modal-content{
+    min-width: 700px;
+}
