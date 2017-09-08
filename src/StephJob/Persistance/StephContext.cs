@@ -48,6 +48,8 @@
 
         public DbSet<Soc2010> Soc2010s { get; set; }
 
+        public DbSet<UnemploymentJobVacanciesRatio> UnemploymentJobVacanciesRatios { get; set; }
+
         public DbSet<WorldBankGdp> WorldBankGdps { get; set; }
     }
 }

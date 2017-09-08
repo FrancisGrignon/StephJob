@@ -180,6 +180,17 @@
 
             //var physicalFlow = unitOfWork.PhysicalFlowAcccounts.Find(p => p.)
 
+            var unemployment = unitOfWork.UnemploymentJobVacanciesRatios.Find(p => p.NaicsCode2Digits == id).SingleOrDefault();
+
+            if (null == unemployment)
+            {
+                indicator.UnemploymentJobVacanciesRatio = "NA";
+            }
+            else
+            {
+                indicator.UnemploymentJobVacanciesRatio = unemployment.Y2016.ToString("F2") + "%";
+            }
+
             return Json(indicator);
         }
 
@@ -205,6 +216,8 @@
             public string GreenHouseGas { get; set; }
 
             public string IndustryProportion { get; set; }
+
+            public string UnemploymentJobVacanciesRatio { get; set; }
         }
 
         protected override void Dispose(bool disposing)

@@ -39,6 +39,9 @@
         <div class="row">
             <h1>Weekly Earning: <span id="earningByWeek"></span></h1>
         </div>
+        <div class="row">
+            <h1>Unemployment-to-job vacancies ratio: <span id="unemploymentJobVacanciesRatio"></span></h1>
+        </div>
     </div>
 </div>
 
@@ -332,6 +335,7 @@
                 $('#IndustryProportion').text(data.industryProportion);
                 $('#earningByWeek').text(data.earningByWeek);
                 $('#greenGoodsAndServices').text(data.greenGoodsAndServices);
+                $('#unemploymentJobVacanciesRatio').text(data.unemploymentJobVacanciesRatio);
             });
         }
 
