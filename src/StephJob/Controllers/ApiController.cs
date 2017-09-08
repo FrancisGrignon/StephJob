@@ -178,7 +178,16 @@
                 indicator.IndustryProportion = (gdpIndustry.Y2017 * 100 / gdpTotal.Y2017).ToString("F2");
             }
 
-            //var physicalFlow = unitOfWork.PhysicalFlowAcccounts.Find(p => p.)
+            var physicalFlow = unitOfWork.PhysicalFlowAcccounts.Find(p => p.NaicsCode2Digits == id).SingleOrDefault();
+
+            if (null == physicalFlow)
+            {
+                indicator.PhysicalFlowAcccount = "NA";
+            }
+            else
+            {
+                indicator.PhysicalFlowAcccount = physicalFlow.Unknown2;
+            }
 
             var unemployment = unitOfWork.UnemploymentJobVacanciesRatios.Find(p => p.NaicsCode2Digits == id).SingleOrDefault();
 
@@ -216,6 +225,8 @@
             public string GreenHouseGas { get; set; }
 
             public string IndustryProportion { get; set; }
+
+            public string PhysicalFlowAcccount { get; set; }
 
             public string UnemploymentJobVacanciesRatio { get; set; }
         }

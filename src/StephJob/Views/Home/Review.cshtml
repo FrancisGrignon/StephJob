@@ -75,9 +75,13 @@
     <div class="container" data-center="opacity: 1"  data-center-top="opacity: 0">
         <h1>Environmental Outlook</h1>
         <div class="row">
-            <div class="col-4">
+            <div class="col-6">
                 <h2><span id="greenGoodsAndServices"></span> GGS</h2>
                 <p>Green Goods and Services (GGS) provides a measure of employment in industries that produce goods or provide services that benefit the environment.</p>
+            </div>
+            <div class="col-6">
+                <h2><span id="physicalFlowAcccount"></span> GEA</h2>
+                <p>Physical flow account for greenhouse gas emissions (GEA) by year in kilotonnes.</p>
             </div>
         </div>
         
@@ -335,6 +339,7 @@
                 $('#earningByWeek').text(data.earningByWeek);
                 $('#greenGoodsAndServices').text(data.greenGoodsAndServices);
                 $('#unemploymentJobVacanciesRatio').text(data.unemploymentJobVacanciesRatio);
+                $('#physicalFlowAcccount').text(data.physicalFlowAcccount);
             });
         }
 
